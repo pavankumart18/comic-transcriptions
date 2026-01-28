@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "GEE, IF YOU'RE THE RULER OF \"HECK\" YOU MUST HAVE SOME KIND OF AWESOME NAME."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "YEAH."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "WELL, WHAT IS IT? SOMETHING LIKE \"KING OF EVIL\" OR \"LORD OF DARKNESS\"?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "YOU CAN CALL ME PHIL, PRINCE OF INSUFFICIENT LIGHT."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-03",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-03_name_names_ruler.gif",
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free"
+}

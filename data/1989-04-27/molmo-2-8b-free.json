@@ -1,0 +1,46 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "Hoo-hoo-hee-ha!"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "No, that's not it."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "Do you suppose other people practice laughing when they're alone?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "Of course."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "Time for your sneezing drill."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "Other people make it look so natural."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-27",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-27_laughing_practice_sneeze.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

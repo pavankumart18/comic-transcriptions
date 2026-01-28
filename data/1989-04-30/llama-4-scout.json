@@ -1,0 +1,69 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "HEY! DROP THE RAKE!!"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "WHO ARE YOU?"
+        },
+        {
+          "speaker": "Mother Nature",
+          "text": "I'M MOTHER NATURE, WISEGUY, AND I DON'T REMEMBER ASKING YOU TO SHUFFLE MY DEAD TWIGS AROUND."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "UH... GOSH, I WAS JUST TRYING TO TIDY UP A BIT FOR SPRING..."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "ARE YOU SAYING YOU DON'T LIKE MY HOUSEKEEPING!!"
+        },
+        {
+          "speaker": "Mother Nature",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "BUT I..."
+        }
+      ]
+    },
+    {
+      "panel": 6,
+      "dialogue": [
+        {
+          "speaker": "Mother Nature",
+          "text": "THAT'S IT. NO DINNER FOR YOU TONIGHT, AND I'M SENDING LOCUSTS TO EAT YOUR HOUSE."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-30",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-30_mother_mother nature_rake_family.gif",
+  "model": "meta-llama/llama-4-scout"
+}

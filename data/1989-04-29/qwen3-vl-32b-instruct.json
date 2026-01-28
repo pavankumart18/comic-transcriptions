@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "YOU KNOW WHAT I JUST REALIZED, DOGBERT?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "THE LITTLE HAIRS ON THE BACK OF MY HAND- THEY NEVER GET ANY LONGER."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "BEFORE I RESPOND, JUST GIVE ME A MOMENT TO BASK IN THE RADIANCE OF YOUR WISDOM."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-29",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-29_dog_sarcasm_wise_wisdom_animals.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

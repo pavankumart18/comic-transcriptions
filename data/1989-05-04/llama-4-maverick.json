@@ -1,0 +1,42 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "AH HAH! JUST AS I SUSPECTED."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "HERE IT IS: MATHEMATICAL PROOF THAT ATTRACTIVE SINGLE WOMEN EXIST ONLY IN WHITE VOLKSWAGEN RABBITS AND AEROBICS CLASSES."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "HOW DO YOU EXPLAIN VANNA WHITE?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I WONDER IF ISAAC NEWTON HAD A DOG."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "OR A GIRLFRIEND."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-04",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-04_dog_girlfriend_single_animals_relationships.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

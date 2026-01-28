@@ -1,0 +1,51 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "HELLO. DO YOU REMEMBER SELLING SOME HAIR GROWTH FORMULA TO A BIG GUY NAMED DILBERT?"
+        },
+        {
+          "speaker": "Pharmacist",
+          "text": "UM..."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WELL, I'M DILBERT, AND APPARENTLY THERE ARE SOME UNUSUAL SIDE EFFECTS!"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I TOOK TIME OUT FROM MY THRIVING LAW PRACTICE TO COME TALK TO YOU ABOUT IT."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "THANKS DOGBERT, BUT I ONLY ASKED YOU TO GET MY PRESCRIPTION REFILL... NOT THE DEED TO THE PHARMACY."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "IN THE LONG RUN THIS IS MORE COST-EFFECTIVE."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-23",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-23_dog_hair_medicine_pharmacy_perscription_side effect_animals.gif",
+  "model": "meta-llama/llama-4-scout"
+}

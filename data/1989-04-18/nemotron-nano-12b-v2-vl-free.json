@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I'VE DECIDED TO DEDICATE MY LIFE TO THE LESS FORTUNATE."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "THAT'S VERY NOBLE OF YOU, DOGBERT. WILL YOU BE WORKING WITH THE HOMELESS, OR PERHAPS THE HUNGRY?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I THOUGHT I'D START WITH PEOPLE WHO DIDN'T BUY REAL ESTATE IN THE 70'S ... MAYBE WORK MY WAY UP TO THAT OTHER STUFF."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-18",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-18_homeless persons_real estate_less fortunate.gif",
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free"
+}

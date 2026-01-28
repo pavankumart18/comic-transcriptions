@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'M REALLY NERVOUS ABOUT THIS PRESENTATION FOR THE BIG BOSS. GOT ANY TIPS FOR ME?"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "REMEMBER TO BRING A BUNCH OF COINS TO JANGLE SELF-CONSCIOUSLY IN YOUR POCKETS."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "AVOID EYE CONTACT AND DON'T PAUSE TO EXPLAIN YOUR ACRONYMS."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I WISH I COULD TELL WHEN YOU'RE KIDDING."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-20",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-20_advice_office workers_presentation.gif",
+  "model": "google/gemma-3-27b-it"
+}

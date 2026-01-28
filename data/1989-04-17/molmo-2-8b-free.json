@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I can remember when these were only 15 cents."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "But I'm really dating myself now."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Well, it's not as if anybody else would date you."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-17",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-17_dating_ice cream_relationships.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Pull!"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "Twang!"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "Pop!"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "People who don't play with their food are missing a lot."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-19",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-19_food_toaster_shoot.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

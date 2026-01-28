@@ -1,0 +1,65 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "HELLO. DO YOU REMEMBER\nSELLING SOME HAIR GROWTH\nFORMULA TO A BIG GUY\nNAMED DILBERT?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "UM..."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "PICK UP\nPRESCRIPTIONS\nHERE"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "WELL, I'M DILBERT, AND\nAPPARENTLY THERE ARE\nSOME UNUSUAL SIDE\nEFFECTS!"
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "I TOOK TIME OUT FROM\nMY THRIVING LAW\nPRACTICE TO COME TALK\nTO YOU ABOUT IT."
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "THANKS DOGBERT,\nBUT I ONLY ASKED\nYOU TO GET MY\nPRESCRIPTION\nREFILL ... NOT THE\nDEED TO THE\nPHARMACY."
+        }
+      ]
+    },
+    {
+      "panel": 6,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "IN THE LONG RUN\nTHIS IS MORE\nCOST-EFFECTIVE."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-23",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-23_dog_hair_medicine_pharmacy_perscription_side effect_animals.gif",
+  "model": "google/gemma-3-27b-it"
+}

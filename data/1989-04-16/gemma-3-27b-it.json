@@ -1,0 +1,46 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I\u2019VE DECIDED WE SHOULD OPERATE ALONG MORE CLASSIC LINES, LIKE DR. FRANKENSTEIN\u2019S LAB."
+        },
+        {
+          "speaker": "Wally",
+          "text": "YOU KNOW WHAT THAT MAKES YOU ?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I\u2019VE GOT A HUNCH\u2026"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "LET\u2019S PRACTICE \u2026"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "DOGBERT, FETCH ME A BRAIN !"
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "LIKE YOUR PRESENT MODEL, OR ONE THAT WORKS ?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-16",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-16_dog_brain_animals.gif",
+  "model": "google/gemma-3-27b-it"
+}

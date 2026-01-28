@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Doctor",
+          "text": "I thought I had this tuxedo thing figured out, but what the heck is this?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Oh, that's the number buzzle. You wear it on your head like a sweatband."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Doctor",
+          "text": "Then you clip your pens and pencils to the number buzzle."
+        },
+        {
+          "speaker": "Doctor",
+          "text": "Ah, that explains why the shirt has no pocket."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-25",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-25_embarrassment_joke_tuxedo.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "GEE, IF YOU'RE THE RULER OF \u201cHECK\u201d YOU MUST HAVE SOME KIND OF AWESOME NAME."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "YEAH."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WELL, WHAT IS IT?\nSOMETHING LIKE\n\u201cKING OF EVIL\u201d OR\n\u201cLORD OF DARKNESS\u201d?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "YOU CAN CALL ME\nPHIL, PRINCE OF\nINSUFFICIENT LIGHT."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-03",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-03_name_names_ruler.gif",
+  "model": "google/gemma-3-27b-it"
+}

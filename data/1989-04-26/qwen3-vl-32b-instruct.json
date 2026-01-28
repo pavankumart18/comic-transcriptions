@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "OH NO... IF THIS GUY TURNS LEFT WHEN I GO RIGHT, WE'LL END UP WALKING DOWN THE HALL RIGHT NEXT TO EACH OTHER."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I HATE THIS... A HUGE, EMPTY HALLWAY AND HERE WE ARE SYNCHRONIZED LIKE TWO OF THE ROCKETTES."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "...SO THAT'S WHEN I KNOCKED ON THE LADIES' ROOM DOOR, YELLED \"JANITOR\" AND DUCKED INSIDE."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "AT LEAST YOU MAINTAINED YOUR DIGNITY."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-26",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-26_walking_hallway_dignity_sports.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

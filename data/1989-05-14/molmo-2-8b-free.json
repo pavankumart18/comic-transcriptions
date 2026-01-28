@@ -1,0 +1,56 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "And as you can see..."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Uh-oh, I got an itch in my nose."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Can't scratch it now without looking unprofessional."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Maybe I can casually scratch it with one smooth gesture toward the easel."
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "There's a good chance they thought it was part of the presentation."
+        },
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Did the paramedics remove the pointer or just tape over it?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-14",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-14_nose_office workers_presentation_itch.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

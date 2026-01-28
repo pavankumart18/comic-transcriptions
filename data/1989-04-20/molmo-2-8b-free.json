@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'm really nervous about this presentation for the big boss. Got any tips for me?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Remember to bring a bunch of coins to jangle self-consciously in your pockets."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Avoid eye contact and don't pause to explain your acronyms. I wish I could tell when you're kidding."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-20",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-20_advice_office workers_presentation.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "OH GOOD, THE LAST STOP OF THE DAY."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "FREEZE, MORTAL! LET ME SEE THE EXPIRATION DATE ON THAT MILK!"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I CAN GO TO HELL FOR DRINKING OLD MILK ?!"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "NAH. I'M FROM \"HECK.\" WE HANDLE THE LITTLE STUFF."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-01",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-01_heck_hell_milk.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

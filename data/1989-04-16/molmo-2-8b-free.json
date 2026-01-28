@@ -1,0 +1,61 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I've decided we should operate along more classic lines like Dr. Frankenstein's."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "You know what that makes you?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I've got a hunch."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Let's practice."
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Dogbert, fetch me a brain!"
+        }
+      ]
+    },
+    {
+      "panel": 6,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Like your present model or one that works?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-16",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-16_dog_brain_animals.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

@@ -1,0 +1,46 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "HOO-HOO-HEE-HA!"
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "...NO, THAT'S NOT IT."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "DO YOU SUPPOSE OTHER PEOPLE PRACTICE LAUGHING WHEN THEY'RE ALONE?"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "OF COURSE."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "TIME FOR YOUR SNEEZING DRILL."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "OTHER PEOPLE MAKE IT LOOK SO NATURAL."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-27",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-27_laughing_practice_sneeze.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I don't quite understand what scientific principle you intend to discover with a bowl of soup and a necktie."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'm testing the strange attraction between staining liquids and new ties."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I wonder how Newton missed this little gravitational oddity."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "He didn't wear a necktie."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-22",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-22_test_discover_tie.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

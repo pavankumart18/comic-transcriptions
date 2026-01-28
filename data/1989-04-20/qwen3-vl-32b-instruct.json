@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'M REALLY NERVOUS ABOUT THIS PRESENTATION FOR THE BIG BOSS. GOT ANY TIPS FOR ME?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "REMEMBER TO BRING A BUNCH OF COINS TO JANGLE SELF-CONSCIOUSLY IN YOUR POCKETS."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "...AVOID EYE CONTACT AND DON'T PAUSE TO EXPLAIN YOUR ACRONYMS."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "I WISH I COULD TELL WHEN YOU'RE KIDDING."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-20",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-20_advice_office workers_presentation.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

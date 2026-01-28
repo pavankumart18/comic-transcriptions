@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "CHAPTER IV. \"TIME MANAGEMENT\""
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "ALWAYS POSTPONE MEETINGS WITH TIME-WASTING MORONS."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "HOW DO YOU DO THAT?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "CAN I GET BACK TO YOU ON THAT?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-10",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-10_book_meeting_writing_business.gif",
+  "model": "meta-llama/llama-4-scout"
+}

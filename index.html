@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilbert VLM Evaluation</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTUiIGZpbGw9IiMyNTYzZWIiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJtMTYgNyAyIDcgNyAyLTcgMi0yIDctMi03LTctMiA3LTJaIi8+PC9zdmc+">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/styles/github-dark.min.css"
+        crossorigin="anonymous">
+    <style>
+        /* Keep custom styles minimal, prefer Bootstrap classes */
+        /* Custom score badges */
+        .score-badge {
+            display: block;
+            width: 100%;
+            padding: 8px 4px;
+            font-weight: 600;
+            border-radius: 0;
+            text-align: center;
+        }
+
+        /* 90-100: Dark Green, White Text */
+        .bg-score-high {
+            background-color: #15803d;
+            color: #ffffff;
+        }
+
+        /* 80-89: Pale Green, Dark Green Text */
+        .bg-score-good {
+            background-color: #bbf7d0;
+            color: #14532d;
+        }
+
+        /* 70-79: Yellow, Black Text (High Contrast) */
+        .bg-score-mid {
+            background-color: #fde047;
+            color: #000000;
+        }
+
+        /* 50-69: Light Red, Dark Red Text */
+        .bg-score-low {
+            background-color: #fca5a5;
+            color: #7f1d1d;
+        }
+
+        /* <50: Dark Red, White Text */
+        .bg-score-bad {
+            background-color: #b91c1c;
+            color: #ffffff;
+        }
+
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        /* Light mode hover */
+        [data-bs-theme="light"] th.sortable:hover,
+        :root:not([data-bs-theme="dark"]) th.sortable:hover {
+            background-color: #e2e8f0;
+        }
+
+        /* Dark mode hover - uses a dark gray instead of white */
+        [data-bs-theme="dark"] th.sortable:hover {
+            background-color: #374151;
+            color: #e5e7eb;
+        }
+
+        .sort-icon {
+            font-size: 0.8em;
+            margin-left: 4px;
+            opacity: 0.5;
+        }
+
+        th.sortable:hover .sort-icon {
+            opacity: 1;
+        }
+
+        /* Ensure badges fill the cell for solid grid look */
+        .score-badge {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            min-height: 40px;
+            /* Ensure sufficient touch target/visual weight */
+            border-radius: 0;
+            /* Removing border radius for solid grid look */
+        }
+
+        /* Eliminate padding on cells containing badges so they touch edges */
+        td.p-0 {
+            padding: 0 !important;
+        }
+
+        /* Ensure rows have consistent height */
+        tr {
+            height: 40px;
+        }
+
+        /* Ensure all cells stretch to fill the row height */
+        td {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=".">Dilbert VLM Evaluation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-auto"></div>
+                <div class="nav-item dropdown ms-2" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+                    <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (auto)">
+                        <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" data-bs-theme-value="light"><i
+                                    class="me-2 bi bi-sun-fill"></i> Light</button></li>
+                        <li><button class="dropdown-item" data-bs-theme-value="dark"><i
+                                    class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+                        <li><button class="dropdown-item" data-bs-theme-value="auto"><i
+                                    class="me-2 bi bi-circle-half"></i> Auto</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="display-1 my-4 text-center">Dilbert Vision Model Evaluation</h1>
+        <h2 class="display-6 text-center">Benchmarking VLMs across strict accuracy metrics</h2>
+        <div class="mx-auto my-3 narrative text-center" style="max-width: 800px;">
+            <p class="lead mb-4">
+                A rigorous benchmarking of state-of-the-art vision-language models on the task of <strong>structured
+                    comic strip transcription</strong>.
+                Models are evaluated by a <strong>GPT-5.2 Judge</strong> against human-annotated ground truth, focusing
+                on
+                text accuracy, speaker identification, and panel segmentation.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#promptGenModal">
+                    <i class="bi bi-robot"></i> View Generation Prompt
+                </button>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#promptEvalModal">
+                    <i class="bi bi-clipboard-check"></i> View Evaluation Prompt
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Content -->
+    <div class="container my-4">
+        <div id="loading" class="text-center my-5">
+            <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+        </div>
+
+        <div id="toptable" class="mb-5"></div>
+        <div id="output"></div>
+    </div>
+
+    <!-- Detail Modal -->
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+            style="max-width: 95vw; height: 90vh;">
+            <div class="modal-content h-100">
+                <div class="modal-header border-bottom py-2 flex-shrink-0">
+                    <h5 class="modal-title fs-6 fw-bold text-uppercase text-secondary" id="detailModalLabel">Strip
+                        Analysis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 d-flex overflow-hidden h-100">
+                    <div class="row g-0 w-100 h-100">
+                        <!-- Left: Static Image Pane -->
+                        <div
+                            class="col-lg-7 h-100 bg-body-tertiary border-end d-flex flex-column align-items-center justify-content-center p-3 position-relative">
+
+                            <!-- Top Toolbar -->
+                            <div class="w-100 d-flex justify-content-end mb-2" id="image-toolbar">
+                                <a id="view-image-btn" href="#" target="_blank"
+                                    class="btn btn-sm btn-outline-primary d-none">
+                                    <i class="bi bi-box-arrow-up-right"></i> View Image
+                                </a>
+                            </div>
+
+                            <div
+                                class="d-flex align-items-center justify-content-center w-100 h-100 overflow-hidden position-relative">
+                                <!-- Loading Spinner -->
+                                <div id="img-loader" class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+
+                                <img id="modal-img" src="" class="rounded shadow-sm d-none"
+                                    style="max-height: 100%; max-width: 100%; object-fit: contain;" alt="Comic Strip">
+                            </div>
+                        </div>
+
+                        <!-- Right: Scrolling Content Pane -->
+                        <div class="col-lg-5 h-100 p-4 overflow-auto">
+                            <div id="modal-content" class="d-flex flex-column gap-4">
+                                <!-- Content Injected Here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generation Prompt Modal -->
+    <div class="modal fade" id="promptGenModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-robot me-2"></i>Generation Prompt (System)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                    <pre class="m-0"><code class="language-markdown text-light small">You are given a comic strip from the "Dilbert" series.
+
+Task:
+Transcribe the comic panel by panel from left to right.
+
+For each panel:
+- Identify ALL speakers present in that panel
+- Transcribe the exact dialogue spoken by each speaker
+
+Speaker Identification Guide:
+- **Dilbert**: Main character, wears a white shirt, black tie, and glasses.
+- **Dogbert**: A small white dog with glasses.
+- **Pointy-Haired Boss**: Boss with distinct pointy hair.
+- **Wally**: Short sleeve shirt, tie, glasses, flat hair.
+- **Alice**: Woman with distinct triangular hair.
+- If a character is clearly one of these, use their name.
+- If the character is not one of these known characters, use "Unknown" or a generic label (e.g. "Doctor").
+
+Important:
+- A single panel MAY contain multiple speakers
+- Each speaker must be listed separately with their own dialogue
+- Use the context of the text (e.g. if someone is called "Dilbert" in text, label them Dilbert)
+
+Rules:
+- Do NOT explain the joke
+- Do NOT summarize
+- Do NOT merge panels
+- Preserve left-to-right panel order
+- Output STRICT JSON only
+- Be precise and literal
+
+Output STRICT JSON only in this format:
+
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        { "speaker": "", "text": "" }
+      ]
+    }
+  ]
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evaluation Prompt Modal -->
+    <div class="modal fade" id="promptEvalModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="bi bi-clipboard-check me-2"></i>Evaluation Prompt (Judge)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                    <pre class="m-0"><code class="language-markdown text-light small">You are an impartial evaluation model acting as a benchmark judge.
+
+Your task is to evaluate vision-language model outputs against a provided ground truth for Dilbert comic strips.
+
+You MUST:
+- Follow the evaluation metrics and weights exactly as provided.
+- Be strict, consistent, and deterministic.
+- Penalize hallucinations more heavily than omissions.
+- Reward uncertainty (e.g., UNKNOWN speaker) over confident incorrect answers.
+- NOT infer or correct model outputs.
+- NOT rewrite text.
+- NOT normalize capitalization unless explicitly instructed.
+
+--------------------------------------------------
+EVALUATION METRICS (FIXED – DO NOT MODIFY)
+
+1. Text Accuracy (40%)
+   - Compare extracted dialogue text with ground truth
+   - Penalize missing words
+   - Penalize hallucinated words more heavily
+   - Partial matches receive partial credit
+
+2. Speaker Accuracy (25%)
+   - Correct speaker → full credit
+   - UNKNOWN when speaker is ambiguous → 70% credit
+   - Incorrect speaker → 0 credit
+
+3. Capitalization Accuracy (15%)
+   - Ground truth ALL CAPS must remain ALL CAPS
+   - Penalize incorrect casing
+   - Ignore punctuation differences unless casing is affected
+
+4. Panel Alignment (10%)
+   - Correct number of panels
+   - Correct dialogue assigned to correct panel
+
+5. Hallucination Penalty (10%)
+   - No hallucination → full credit
+   - Minor hallucination → partial credit
+   - Major invented dialogue or speakers → zero credit</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "asyncllm": "https://cdn.jsdelivr.net/npm/asyncllm@2.3.1",
+        "bootstrap-alert": "https://cdn.jsdelivr.net/npm/bootstrap-alert@1.1.1",
+        "bootstrap-llm-provider": "https://cdn.jsdelivr.net/npm/bootstrap-llm-provider@1.4.0",
+        "highlight.js": "https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/+esm",
+        "lit-html": "https://cdn.jsdelivr.net/npm/lit-html@3.3.1/+esm",
+        "lit-html/directives/unsafe-html.js": "https://cdn.jsdelivr.net/npm/lit-html@3.3.1/directives/unsafe-html.js",
+        "marked": "https://cdn.jsdelivr.net/npm/marked@13.0.3/+esm",
+        "partial-json": "https://cdn.jsdelivr.net/npm/partial-json@0.1.7/+esm",
+        "saveform": "https://cdn.jsdelivr.net/npm/saveform@1.4.0"
+      }
+    }
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@gramex/ui@0.3.1/dist/dark-theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

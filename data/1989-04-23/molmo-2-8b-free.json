@@ -1,0 +1,51 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Hello, do you remember selling some hair growth formula to a big guy named Dilbert?"
+        },
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Um..."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Well, I'm Dilbert, and apparently there are some unusual side effects."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I took time out from my thriving law practice to come talk to you about it."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Thanks, Dogbert, but I only asked for my prescription refill, not the deed to the pharmacy."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "In the long run, this is more cost-effective."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-23",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-23_dog_hair_medicine_pharmacy_perscription_side effect_animals.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

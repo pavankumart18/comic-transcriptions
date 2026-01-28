@@ -1,0 +1,60 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "THIS IS A VERY FANCY PLACE, DOGBERT, SO DON'T EMBARRASS ME."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "UH...TWO PLEASE. NON-SMOKING."
+        },
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I'M AFRAID, MONSIEUR, THAT JACKETS ARE REQUIRED."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "YOU MAY WEAR THESE COMPLIMENTARY HOUSE JACKETS WHILE YOU DINE."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "YOU MUST ALSO WEAR THESE BEAVER HATS AND CLOWN FEET."
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "NEXT TIME MESSIEURS WILL REMEMBER THEIR JACKETS."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "LOOKS LIKE WE NARROWLY AVOIDED EMBARRASSMENT."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-07",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-07_embarrassment_restaurant_fancy.gif",
+  "model": "google/gemma-3-27b-it"
+}

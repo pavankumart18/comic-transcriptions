@@ -1,0 +1,65 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "This is a very fancy place, Dogbert, so don't embarrass me."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Uh...Two please. Non-smoking."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "I'm afraid, Monsieur, that jackets are required."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "You may wear these complimentary house jackets while you dine."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "You must also wear these beaver hats and clown feet."
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "Next time Messieurs will remember their jackets."
+        }
+      ]
+    },
+    {
+      "panel": 6,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Looks like we narrowly avoided embarrassment."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-07",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-07_embarrassment_restaurant_fancy.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

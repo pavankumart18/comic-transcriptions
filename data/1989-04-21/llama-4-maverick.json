@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "MY NEW INVENTION SCREENS OUT ALL UNPLEASANT SIGHTS. TRY IT."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WELL, WHAT DO YOU THINK?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WHO SAID THAT?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "THE HAND THAT USED TO FEED YOU."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-21",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-21_dog_invention_feed_animals.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

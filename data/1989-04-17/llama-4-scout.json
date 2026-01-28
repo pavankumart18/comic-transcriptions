@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I CAN REMEMBER WHEN THESE WERE ONLY FIFTEEN CENTS."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "BUT I'M REALLY DATING MYSELF NOW..."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WELL, IT'S NOT AS IF ANYBODY ELSE WOULD DATE YOU."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-17",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-17_dating_ice cream_relationships.gif",
+  "model": "meta-llama/llama-4-scout"
+}

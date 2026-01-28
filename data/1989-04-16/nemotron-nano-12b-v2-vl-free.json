@@ -1,0 +1,47 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I've decided we should operate along more classic lines, like Dr. Frankenstein's lab."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I've got a hunch..."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Let's practice..."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "Dogbert, fetch me a brain!"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "Like your present model, or one that works?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-16",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-16_dog_brain_animals.gif",
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free"
+}

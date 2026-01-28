@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "MY NEW INVENTION\nSCREENS OUT ALL\nUNPLEASANT\nSIGHTS. TRY IT."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WELL, WHAT DO\nYOU THINK?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WHO SAID\nTHAT?"
+        },
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "THE HAND THAT\nUSED TO FEED\nYOU."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-21",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-21_dog_invention_feed_animals.gif",
+  "model": "google/gemma-3-27b-it"
+}

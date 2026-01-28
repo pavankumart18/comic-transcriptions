@@ -1,0 +1,61 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'VE DECIDED WE SHOULD OPERATE ALONG MORE CLASSIC LINES, LIKE DR. FRANKENSTEIN'S LAB."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I'VE GOT A HUNCH..."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "LET'S PRACTICE..."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Robot",
+          "text": "YOU KNOW WHAT THAT MAKES YOU?"
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "DOGBERT, FETCH ME A BRAIN!"
+        }
+      ]
+    },
+    {
+      "panel": 6,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "LIKE YOUR PRESENT MODEL, OR ONE THAT WORKS?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-16",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-16_dog_brain_animals.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

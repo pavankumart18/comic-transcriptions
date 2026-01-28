@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Well, what do you think of my new poem?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I once read that given infinite time, a thousand monkeys with typewriters would eventually write the entire works of Shakespeare."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "But what about my poem?"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "Three monkeys, ten minutes."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-15",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-15_poetry_poem_monkey_animals.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I THINK YOU SHOULD SEE A LAWYER BEFORE UNLEASHING THIS NEW INVENTION ON MANKIND."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "...I'M AFRAID MY NEW INVENTION WILL EXPOSE ME TO LOTS OF LAWSUITS."
+        },
+        {
+          "speaker": "Lawyer",
+          "text": "WILL YOU ADVISE ME?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "NO. SOUNDS LIKE I CAN MAKE MORE MONEY BY SUING YOU."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-05",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-05_invention_lawyers_money.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "DO YOU REALIZE THAT IF WE STAY TOGETHER FOR SEVEN YEARS, WE ARE CONSIDERED MARRIED BY COMMON LAW?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "THAT MEANS I OWN HALF OF ALL YOUR WORLDLY POSSESSIONS."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I PLAN TO SELL MY HALF... MAYBE BUY SOME TASTEFUL THINGS INSTEAD."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-12",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-12_marriage_pet ownership_sell_relationships.gif",
+  "model": "google/gemma-3-27b-it"
+}

@@ -1,0 +1,42 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I DON'T QUITE UNDERSTAND WHAT SCIENTIFIC PRINCIPLE YOU INTEND TO DISCOVER WITH A BOWL OF SOUP AND A NECKTIE."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "I'M TESTING THE STRANGE ATTRACTION BETWEEN STAINING LIQUIDS AND NEW TIES."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I WONDER HOW NEWTON MISSED THIS LITTLE GRAVITATIONAL ODDITY."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "FOOSH!"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "HE DIDN'T WEAR A NECKTIE."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-22",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-22_test_discover_tie.gif",
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free"
+}

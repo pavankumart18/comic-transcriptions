@@ -1,0 +1,51 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "...AND AS YOU CAN SEE..."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "UH OH... I GOT AN ITCH IN MY NOSE."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "...CAN'T SCRATCH IT NOW WITHOUT LOOKING UNPROFESSIONAL."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "MAYBE I CAN CASUALLY SCRATCH IT WITH ONE SMOOTH GESTURE TOWARD THE EASEL."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "THERE'S A GOOD CHANCE THEY THOUGHT IT WAS PART OF THE PRESENTATION."
+        },
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "DID THE PARAMEDICS REMOVE THE POINTER OR JUST TAPE OVER IT?"
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-14",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-14_nose_office workers_presentation_itch.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "And what can I get for you, little fellow?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "I want it all! Ha ha ha! Give me mouthwash, gum, deodorant, lipstick, crazy glue, and Rolo's and..."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I panicked."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-28",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-28_panic_store.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

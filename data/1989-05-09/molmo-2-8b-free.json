@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'm writing my first business management book, 'Managing in a Bureaucracy'."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "You know you're in a bureaucracy when a hundred people who think A get together and compromise on B."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Think anybody will read it?"
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "It doesn't matter. The real money is on the lecture circuit."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-09",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-09_book_office workers_writing.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

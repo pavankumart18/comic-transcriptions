@@ -1,0 +1,42 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Gosh, I thought heck was just a figure of speech."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "Yeah, a lot of people think they can get away with minor infractions."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "According to my records, last month you deliberately asked for three little ketchup packets at McDonald's when you knew you only needed two."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I knew that would come back to haunt me. Look, I still have the extra one. I'll give it back."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "Shame."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-02",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-02_heck_shame_minor.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

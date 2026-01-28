@@ -1,0 +1,60 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "HEY! DROP THE RAKE!!"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "WHO ARE YOU?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "I'M MOTHER NATURE, WISEGUY, AND I DON'T REMEMBER ASKING YOU TO SHUFFLE MY DEAD TWIGS AROUND."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "UH... GOSH, I WAS JUST TRYING TO TIDY UP A BIT FOR SPRING..."
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "ARE YOU SAYING YOU DON'T LIKE MY HOUSEKEEPING!!"
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "BUT I..."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "THAT'S IT. NO DINNER FOR YOU TONIGHT, AND I'M SENDING LOCUSTS TO EAT YOUR HOUSE."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-30",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-30_mother_mother nature_rake_family.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

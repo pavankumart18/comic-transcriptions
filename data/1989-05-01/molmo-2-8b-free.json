@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Oh good, the last stop of the day."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Freeze, mortal! Let me see the expiration date on that milk."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I can go to hell for drinking old milk."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "Nah, I'm from 'heck.' We handle the little stuff."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-01",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-01_heck_hell_milk.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

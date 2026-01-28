@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "IT'S SO AWKWARD TO WALK PAST STRANGERS IN HALLWAYS; YOU ALWAYS GOTTA AVOID EYE CONTACT."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I KNOW--I'LL WAIT UNTIL WE'RE NEAR AND THEN PICK UP THAT LITTLE PIECE OF FUZZ ON THE CARPET THERE."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "... THEN WE BOTH WENT FOR THE CARPET FUZZ."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "SMOOTH."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-13",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-13_walk_hallway_stranger.gif",
+  "model": "google/gemma-3-27b-it"
+}

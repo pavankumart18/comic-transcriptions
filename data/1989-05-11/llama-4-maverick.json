@@ -1,0 +1,42 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "WELCOME TO ELECTRODE HUT. I'M HALF YOUR AGE, AND I KNOW MORE ABOUT ELECTRONICS THAN YOU EVER WILL. MAY I HELP YOU?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "YES. I WOULD LIKE A HALF-DOZEN NIAD PULSE CONVERTERS AND AN ANZA BRUSH."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "OR AM I BLUFFING?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "OR AM I BLUFFING?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "THIS GUY IS GOOD."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-11",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-11_knowledge_electronic_bluff.gif",
+  "model": "meta-llama/llama-4-maverick"
+}

@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "GREAT! THE ENGINEER'S BALL IS BLACK TIE THIS YEAR."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I WILL BE RENTING A TUXEDO FOR THE BALL, AND I WOULD LIKE IT IF YOU COULD KEEP ANY SNIDE COMMENTS TO YOURSELF."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "GOSH. EVEN I WOULDN'T MAKE FUN OF A GUY WHO WOULD PAY SIXTY-FIVE BUCKS TO WEAR BORROWED PANTS."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-24",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-24_ball_rent_tuxedo.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

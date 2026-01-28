@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "UH... EXCUSE ME, EARTH DOG."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "WE HAVE TRAVELED FROM A DISTANT PLANET TO FIND OUT WHY EARTH DOGS ARE FORCED TO EAT FROM DIRTY LITTLE BOWLS WHILE HUMANS USE PLATES."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "WELL, BASICALLY, IT'S POLITICAL. IT ALL BEGAN AFTER THE UNSUCCESSFUL POODLE REBELLION IN FRANCE, AROUND 1723..."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "BETTER USE A PENCIL ..."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-08",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-08_aliens_dog_history_animals_education.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

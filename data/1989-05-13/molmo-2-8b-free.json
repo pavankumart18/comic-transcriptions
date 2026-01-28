@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "It's so awkward to walk past strangers in hallways. You always gotta avoid eye contact."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "I know, I'll wait until we're near that little piece of fuzz on the carpet there."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "Then we both went for the carpet fuzz."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "Smooth."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-13",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-13_walk_hallway_stranger.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

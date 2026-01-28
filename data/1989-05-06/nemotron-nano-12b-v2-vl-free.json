@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "GEE, HOW COULD ANYBODY BE OPPOSED TO BUILDING MORE ROADS?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "EVERY TIME I SEE HIGHWAY CONSTRUCTION..."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "...SOME PROTESTER HAS ALREADY PUT UP A SIGN."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-06",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-06_construction_sign_road_engineering.gif",
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free"
+}

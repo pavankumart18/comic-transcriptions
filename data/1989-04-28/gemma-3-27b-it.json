@@ -1,0 +1,34 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "AND WHAT CAN I GET FOR YOU LITTLE FELLOW?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I WANT IT ALL!! HA HA! GIVE ME MOUTHWASH, GUM, DEODORANT, LIPSTICK, KRAZY GLUE, ROLAIDS AND..."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "I PANICKED."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-28",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-28_panic_store.gif",
+  "model": "google/gemma-3-27b-it"
+}

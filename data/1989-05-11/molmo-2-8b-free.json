@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Welcome to Electrode Hut. I'm half your age and I know more about electronics than you ever will. May I help you?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Yes, I would like a half dozen N-I-A-D pulse converters and an ANZA brush."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Or am I bluffing?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "This guy is good."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-11",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-11_knowledge_electronic_bluff.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

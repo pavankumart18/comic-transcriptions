@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "My new invention screens out all unpleasant sights. Try it."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Well, what do you think?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Who said that?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "The hand that used to feed you."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-21",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-21_dog_invention_feed_animals.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

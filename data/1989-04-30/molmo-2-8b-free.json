@@ -1,0 +1,55 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Hey, drop the rake!"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Who are you?"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "I'm Mother Nature, wise guy, and I don't remember asking you to shuffle my dead twigs around."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Uh-oh, gosh, I was just trying to tidy up a bit for spring."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "Are you saying you don't like my housekeeping?"
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "But I..."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "That's it. No dinner for you tonight, and I'm sending locusts to eat your house."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-30",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-30_mother_mother nature_rake_family.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

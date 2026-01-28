@@ -1,0 +1,42 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "GOSH. I THOUGHT \"HECK\" WAS JUST A FIGURE OF SPEECH."
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "YEAH. A LOT OF PEOPLE THINK THEY CAN GET AWAY WITH MINOR INFRACTIONS."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "ACCORDING TO MY RECORDS, LAST MONTH YOU DELIBERATELY ASKED FOR THREE LITTLE KETCHUPS AT MCDONALD'S WHEN YOU KNEW YOU ONLY NEEDED TWO."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I KNEW THAT WOULD COME BACK TO HAUNT ME. LOOK, I STILL HAVE THE EXTRA ONE. I'LL GIVE IT BACK!"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "SHAME SHAME..."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-02",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-02_heck_shame_minor.gif",
+  "model": "google/gemma-3-27b-it"
+}

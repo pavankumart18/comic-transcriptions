@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I\u2019M WRITING MY FIRST BUSINESS MANAGEMENT BOOK, \u201cMANAGING IN A BUREAUCRACY.\u201d"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "\"YOU KNOW YOU\u2019RE IN A BUREAUCRACY WHEN A HUNDRED PEOPLE WHO THINK \u2018A\u2019 GET TOGETHER AND COMPROMISE ON \u2018B.\u2019\u201d"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "THINK ANYBODY WILL READ IT?"
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "IT DOESN\u2019T MATTER. THE REAL MONEY IS ON THE LECTURE CIRCUIT."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-09",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-09_book_office workers_writing.gif",
+  "model": "google/gemma-3-27b-it"
+}

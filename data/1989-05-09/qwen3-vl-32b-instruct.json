@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I'M WRITING MY FIRST BUSINESS MANAGEMENT BOOK, \"MANAGING IN A BUREAUCRACY.\" "
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "\"YOU KNOW YOU'RE IN A BUREAUCRACY WHEN A HUNDRED PEOPLE WHO THINK 'A' GET TOGETHER AND COMPROMISE ON 'B.'\""
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "THINK ANYBODY WILL READ IT?"
+        },
+        {
+          "speaker": "Dilbert",
+          "text": "IT DOESN'T MATTER. THE REAL MONEY IS ON THE LECTURE CIRCUIT."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-09",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-09_book_office workers_writing.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

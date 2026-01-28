@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I THOUGHT I HAD THIS TUXEDO THING FIGURED OUT. BUT WHAT THE HECK IS THIS?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "OH, THAT\u2019S THE KUMBERBUZZLE. YOU WEAR IT ON YOUR HEAD LIKE A SWEATBAND."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "THEN YOU CLIP YOUR PENS AND PENCILS TO THE KUMBERBUZZLE."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "AH, THAT EXPLAINS WHY THE SHIRT HAS NO POCKET."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-25",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-25_embarrassment_joke_tuxedo.gif",
+  "model": "google/gemma-3-27b-it"
+}

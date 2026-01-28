@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "MY NEW INVENTION SCREENS OUT ALL UNPLEASANT SIGHTS. TRY IT."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "WELL, WHAT DO YOU THINK?"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "WHO SAID THAT?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "THE HAND THAT USED TO FEED YOU."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-21",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-21_dog_invention_feed_animals.gif",
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free"
+}

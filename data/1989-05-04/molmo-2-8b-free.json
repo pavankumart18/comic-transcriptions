@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Ah ha! Just as I suspected."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Here it is: Mathematical proof that attractive single women exist only in white Volkswagen rabbits and aerobics classes."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "How do you explain Vanna White?"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I wonder if Isaac Newton had a dog or a girlfriend."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-04",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-04_dog_girlfriend_single_animals_relationships.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

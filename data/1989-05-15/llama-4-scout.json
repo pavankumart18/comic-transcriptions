@@ -1,0 +1,46 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "WELL? WHAT DO YOU THINK OF MY NEW POEM?"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "I ONCE READ THAT GIVEN INFINITE TIME, A THOUSAND MONKEYS WITH TYPEWRITERS WOULD EVENTUALLY WRITE THE ENTIRE WORKS OF SHAKESPEARE."
+        },
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Pointy-Haired Boss",
+          "text": "BUT WHAT ABOUT MY POEM?"
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "THREE MONKEYS, TEN MINUTES."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-15",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-15_poetry_poem_monkey_animals.gif",
+  "model": "meta-llama/llama-4-scout"
+}

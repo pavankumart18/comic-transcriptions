@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "PULL!"
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Unknown",
+          "text": "TWANG!"
+        },
+        {
+          "speaker": "Unknown",
+          "text": "POP!"
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "PEOPLE WHO DON'T PLAY WITH THEIR FOOD ARE MISSING A LOT."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-19",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-19_food_toaster_shoot.gif",
+  "model": "qwen/qwen3-vl-32b-instruct"
+}

@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Uh, excuse me, Earth dog."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "We have traveled from a distant planet to find out why Earth dogs are forced to eat from dirty little bowls while humans use plates."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dogbert",
+          "text": "Well, basically, it's political. It all began after the unsuccessful Poodle Rebellion in France around 1723."
+        },
+        {
+          "speaker": "Unknown",
+          "text": "Better use a pencil."
+        }
+      ]
+    }
+  ],
+  "date": "1989-05-08",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-05-08_aliens_dog_history_animals_education.gif",
+  "model": "allenai/molmo-2-8b:free"
+}

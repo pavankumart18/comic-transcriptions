@@ -1,0 +1,38 @@
+{
+  "panels": [
+    {
+      "panel": 1,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "Oh no, if this guy turns left when I go right, we'll end up walking down the hall right next to each other."
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "I hate this, a huge empty hallway and here we are synchronized like two of the rockettes."
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "dialogue": [
+        {
+          "speaker": "Dilbert",
+          "text": "So that's when I knocked on the ladies' room door, yelled janitor and ducked inside."
+        },
+        {
+          "speaker": "Dogbert",
+          "text": "At least you maintained your dignity."
+        }
+      ]
+    }
+  ],
+  "date": "1989-04-26",
+  "image_location": "c:\\Users\\admin\\Desktop\\Dilbert_1989-2023_complete\\1989\\1989-04-26_walking_hallway_dignity_sports.gif",
+  "model": "allenai/molmo-2-8b:free"
+}
