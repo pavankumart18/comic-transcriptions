@@ -457,7 +457,6 @@ function renderAggregatedTable() {
                         ${aggregatedData.map((m, i) => html`
                             <tr class="${i === 0 && aggSortState.col === 'score' && !aggSortState.asc ? 'bg-body-tertiary' : ''}">
                                 <td class="ps-4 fw-medium text-body-emphasis">
-                                    ${(i === 0 && aggSortState.col === 'score' && !aggSortState.asc) ? html`<i class="bi bi-crown-fill text-warning me-2"></i>` : ''}
                                     ${m.name}
                                 </td>
                                 <td class="text-center p-0 border-start border-end" style="width: 100px;">
