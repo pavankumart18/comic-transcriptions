@@ -173,8 +173,52 @@
             <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
         </div>
 
-        <div id="toptable" class="mb-5"></div>
-        <div id="output"></div>
+        <hr class="my-5">
+
+        <h3 class="mb-3">Evaluation Results</h3>
+        <div id="toptable2" class="mb-4"></div>
+        <div id="output2"></div>
+
+        <hr class="my-5">
+
+        <div class="d-flex align-items-center mb-3">
+            <h3 class="mb-0 me-3">Model A vs Model B Comparison</h3>
+            <button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#comparisonMethodModal">
+                <i class="bi bi-info-circle me-1"></i> Methodology
+            </button>
+        </div>
+        <p class="text-secondary mb-4">Comparing <strong>Gemini 3 Flash</strong> (Model A) vs <strong>Qwen 3 VL</strong>
+            (Model B)</p>
+
+        <!-- 1. Top Summary Section -->
+        <div class="row g-4 mb-5" id="comparison-stats">
+            <!-- Injected by JS -->
+        </div>
+
+        <!-- 2. Agreement Breakdown -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-header bg-transparent border-0 pt-4 pb-2">
+                <h5 class="card-title fw-bold text-uppercase small text-body-secondary"><i
+                        class="bi bi-pie-chart-fill me-2"></i>Agreement Breakdown</h5>
+            </div>
+            <div class="card-body">
+                <div class="progress-stacked" style="height: 30px;" id="agreement-bar">
+                    <!-- Injected by JS -->
+                </div>
+                <div class="d-flex justify-content-between mt-2 small text-secondary" id="agreement-legend">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Panel Level Table -->
+        <div id="comparison-table"></div>
+
+        <!-- 5. Footer Disclaimer -->
+        <div class="text-center text-muted small my-5">
+            <p>Accuracy is reported only for panels where independent models agree.<br>
+                Disagreement cases are excluded from accuracy computation.</p>
+        </div>
     </div>
 
     <!-- Detail Modal -->
@@ -250,6 +294,7 @@ Speaker Identification Guide:
 - **Pointy-Haired Boss**: Boss with distinct pointy hair.
 - **Wally**: Short sleeve shirt, tie, glasses, flat hair.
 - **Alice**: Woman with distinct triangular hair.
+- **Phil, Prince of Insufficient Light**: Pale, tired, dimly glowing, slouched .
 - If a character is clearly one of these, use their name.
 - If the character is not one of these known characters, use "Unknown" or a generic label (e.g. "Doctor").
 
@@ -415,6 +460,65 @@ Output STRICT JSON only in this format:
         </div>
     </div>
 
+    <!-- Comparison Methodology Modal -->
+    <div class="modal fade" id="comparisonMethodModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-sliders me-2"></i>Comparison Methodology</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead small mb-4">
+                        This dashboard compares raw outputs from two independent models to assess inter-model agreement.
+                        The comparison is strict and automated, with <strong>zero</strong> human intervention or AI
+                        correction.
+                    </p>
+
+                    <h6 class="fw-bold text-uppercase small text-secondary mb-3">1. Comparison Rules</h6>
+                    <ul class="list-group mb-4 small">
+                        <li class="list-group-item">
+                            <strong><i class="bi bi-person-badge me-2"></i>Speaker Agreement</strong>
+                            <br>
+                            <span class="text-muted">Speakers are considered AGREE if they match after:</span>
+                            <ul>
+                                <li>Lowercasing (<code>"Dilbert"</code> → <code>"dilbert"</code>)</li>
+                                <li>Trimming leading/trailing whitespace</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">
+                            <strong><i class="bi bi-chat-text me-2"></i>Text Agreement</strong>
+                            <br>
+                            <span class="text-muted">Dialogue is considered AGREE if it matches after:</span>
+                            <ul>
+                                <li>Lowercasing all text</li>
+                                <li><strong>Removing all punctuation</strong> (<code>"Hello!"</code> →
+                                    <code>"hello"</code>)</li>
+                                <li>Normalizing whitespace (collapsing multiple spaces)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h6 class="fw-bold text-uppercase small text-secondary mb-3">2. Important Notes</h6>
+                    <div class="alert alert-light border small">
+                        <ul class="mb-0">
+                            <li><strong>Immutable Outputs</strong>: We do NOT correct spelling mistakes or "fix" bad
+                                responses. What you see is exactly what the model generated.</li>
+                            <li><strong>Ground Truth Agnostic</strong>: This section solely compares Model A against
+                                Model B. It does not check if they are "correct" relative to the actual comic, only if
+                                they are "consistent" with each other.</li>
+                            <li><strong>Strict & Deterministic</strong>: Any difference in words (even synonyms) results
+                                in a disagreement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="importmap">
     {
       "imports": {
@@ -426,7 +530,8 @@ Output STRICT JSON only in this format:
         "lit-html/directives/unsafe-html.js": "https://cdn.jsdelivr.net/npm/lit-html@3.3.1/directives/unsafe-html.js",
         "marked": "https://cdn.jsdelivr.net/npm/marked@13.0.3/+esm",
         "partial-json": "https://cdn.jsdelivr.net/npm/partial-json@0.1.7/+esm",
-        "saveform": "https://cdn.jsdelivr.net/npm/saveform@1.4.0"
+        "saveform": "https://cdn.jsdelivr.net/npm/saveform@1.4.0",
+        "d3": "https://cdn.jsdelivr.net/npm/d3@7/+esm"
       }
     }
   </script>

@@ -1,0 +1,2342 @@
+[
+  {
+    "dataset_id": "1989-04-16",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I'VE DECIDED WE SHOULD OPERATE ALONG MORE CLASSIC LINES, LIKE DR. FRANKENSTEIN'S LAB."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I'VE DECIDED WE SHOULD OPERATE ALONG MORE CLASSIC LINES, LIKE DR. FRANKENSTEIN'S LAB."
+    },
+    "comparison": {
+      "panel_id": "1989-04-16_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-16",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "YOU KNOW WHAT THAT MAKES YOU?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "YOU KNOW WHAT THAT MAKES YOU?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-16_p2_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-16",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I'VE GOT A HUNCH..."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I'VE GOT A HUNCH..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-16_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-16",
+    "panel_idx": 4,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "LET'S PRACTICE..."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "LET'S PRACTICE..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-16_p4_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-16",
+    "panel_idx": 5,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "DOGBERT, FETCH ME A BRAIN!"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "DOGBERT, FETCH ME A BRAIN!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-16_p5_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-16",
+    "panel_idx": 5,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "LIKE YOUR PRESENT MODEL, OR ONE THAT WORKS?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "LIKE YOUR PRESENT MODEL, OR ONE THAT WORKS?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-16_p5_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-17",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I CAN REMEMBER WHEN THESE WERE ONLY FIFTEEN CENTS."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I CAN REMEMBER WHEN THESE WERE ONLY FIFTEEN CENTS."
+    },
+    "comparison": {
+      "panel_id": "1989-04-17_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-17",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "BUT I'M REALLY DATING MYSELF NOW..."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "BUT I'M REALLY DATING MYSELF NOW..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-17_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-17",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "WELL, IT'S NOT AS IF ANYBODY ELSE WOULD DATE YOU."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "WELL, IT'S NOT AS IF ANYBODY ELSE WOULD DATE YOU."
+    },
+    "comparison": {
+      "panel_id": "1989-04-17_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-18",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I'VE DECIDED TO DEDICATE MY LIFE TO THE LESS FORTUNATE."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I'VE DECIDED TO DEDICATE MY LIFE TO THE LESS FORTUNATE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-18_p1_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-18",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THAT'S VERY NOBLE OF YOU, DOGBERT. WILL YOU BE WORKING WITH THE HOMELESS, OR PERHAPS THE HUNGRY?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THAT'S VERY NOBLE OF YOU, DOGBERT. WILL YOU BE WORKING WITH THE HOMELESS, OR PERHAPS THE HUNGRY?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-18_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-18",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I THOUGHT I'D START WITH PEOPLE WHO DIDN'T BUY REAL ESTATE IN THE 70'S . . . MAYBE WORK MY WAY UP TO THAT OTHER STUFF."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I THOUGHT I'D START WITH PEOPLE WHO DIDN'T BUY REAL ESTATE IN THE 70'S ... MAYBE WORK MY WAY UP TO THAT OTHER STUFF."
+    },
+    "comparison": {
+      "panel_id": "1989-04-18_p3_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-19",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "PULL!"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "PULL!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-19_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-19",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "TWANG!"
+    },
+    "model_b_raw": {
+      "speaker": "",
+      "text": "TWANG!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-19_p2_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-19",
+    "panel_idx": 2,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "POP!"
+    },
+    "model_b_raw": {
+      "speaker": "",
+      "text": "POP!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-19_p2_l2",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-19",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "PEOPLE WHO DON'T PLAY WITH THEIR FOOD ARE MISSING A LOT."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "PEOPLE WHO DON'T PLAY WITH THEIR FOOD ARE MISSING A LOT."
+    },
+    "comparison": {
+      "panel_id": "1989-04-19_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-20",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I'M REALLY NERVOUS ABOUT THIS PRESENTATION FOR THE BIG BOSS. GOT ANY TIPS FOR ME?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I'M REALLY NERVOUS ABOUT THIS PRESENTATION FOR THE BIG BOSS. GOT ANY TIPS FOR ME?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-20_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-20",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "REMEMBER TO BRING A BUNCH OF COINS TO JANGLE SELF-CONSCIOUSLY IN YOUR POCKETS."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "REMEMBER TO BRING A BUNCH OF COINS TO JANGLE SELF-CONSCIOUSLY IN YOUR POCKETS."
+    },
+    "comparison": {
+      "panel_id": "1989-04-20_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-20",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "...AVOID EYE CONTACT AND DON'T PAUSE TO EXPLAIN YOUR ACRONYMS."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "...AVOID EYE CONTACT AND DON'T PAUSE TO EXPLAIN YOUR ACRONYMS."
+    },
+    "comparison": {
+      "panel_id": "1989-04-20_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-20",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I WISH I COULD TELL WHEN YOU'RE KIDDING."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I WISH I COULD TELL WHEN YOU'RE KIDDING."
+    },
+    "comparison": {
+      "panel_id": "1989-04-20_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-21",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "MY NEW INVENTION SCREENS OUT ALL UNPLEASANT SIGHTS. TRY IT."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "MY NEW INVENTION SCREENS OUT ALL UNPLEASANT SIGHTS. TRY IT."
+    },
+    "comparison": {
+      "panel_id": "1989-04-21_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-21",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "WELL, WHAT DO YOU THINK?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "WELL, WHAT DO YOU THINK?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-21_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-21",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "WHO SAID THAT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "WHO SAID THAT?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-21_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-21",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THE HAND THAT USED TO FEED YOU."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THE HAND THAT USED TO FEED YOU."
+    },
+    "comparison": {
+      "panel_id": "1989-04-21_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-22",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I DON'T QUITE UNDERSTAND WHAT SCIENTIFIC PRINCIPLE YOU INTEND TO DISCOVER WITH A BOWL OF SOUP AND A NECKTIE."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I DON'T QUITE UNDERSTAND WHAT SCIENTIFIC PRINCIPLE YOU INTEND TO DISCOVER WITH A BOWL OF SOUP AND A NECKTIE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-22_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-22",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I'M TESTING THE STRANGE ATTRACTION BETWEEN STAINING LIQUIDS AND NEW TIES."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I'M TESTING THE STRANGE ATTRACTION BETWEEN STAINING LIQUIDS AND NEW TIES."
+    },
+    "comparison": {
+      "panel_id": "1989-04-22_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-22",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I WONDER HOW NEWTON MISSED THIS LITTLE GRAVITATIONAL ODDITY."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I WONDER HOW NEWTON MISSED THIS LITTLE GRAVITATIONAL ODDITY."
+    },
+    "comparison": {
+      "panel_id": "1989-04-22_p3_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-22",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "HE DIDN'T WEAR A NECKTIE."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "HE DIDN'T WEAR A NECKTIE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-22_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-23",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "HELLO. DO YOU REMEMBER SELLING SOME HAIR GROWTH FORMULA TO A BIG GUY NAMED DILBERT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "HELLO. DO YOU REMEMBER SELLING SOME HAIR GROWTH FORMULA TO A BIG GUY NAMED DILBERT?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-23_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-23",
+    "panel_idx": 1,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "UM..."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "UM..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-23_p1_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-23",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "WELL, I'M DILBERT, AND APPARENTLY THERE ARE SOME UNUSUAL SIDE EFFECTS!"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "WELL, I'M DILBERT, AND APPARENTLY THERE ARE SOME UNUSUAL SIDE EFFECTS!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-23_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-23",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I TOOK TIME OUT FROM MY THRIVING LAW PRACTICE TO COME TALK TO YOU ABOUT IT."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I TOOK TIME OUT FROM MY THRIVING LAW PRACTICE TO COME TALK TO YOU ABOUT IT."
+    },
+    "comparison": {
+      "panel_id": "1989-04-23_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-23",
+    "panel_idx": 5,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THANKS DOGBERT, BUT I ONLY ASKED YOU TO GET MY PRESCRIPTION REFILL... NOT THE DEED TO THE PHARMACY."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THANKS DOGBERT, BUT I ONLY ASKED YOU TO GET MY PRESCRIPTION REFILL ... NOT THE DEED TO THE PHARMACY."
+    },
+    "comparison": {
+      "panel_id": "1989-04-23_p5_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-23",
+    "panel_idx": 5,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "IN THE LONG RUN THIS IS MORE COST-EFFECTIVE."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "IN THE LONG RUN THIS IS MORE COST-EFFECTIVE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-23_p5_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-24",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "GREAT! THE ENGINEER'S BALL IS BLACK TIE THIS YEAR."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "GREAT! THE ENGINEER'S BALL IS BLACK TIE THIS YEAR."
+    },
+    "comparison": {
+      "panel_id": "1989-04-24_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-24",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I WILL BE RENTING A TUXEDO FOR THE BALL, AND I WOULD LIKE IT IF YOU COULD KEEP ANY SNIDE COMMENTS TO YOURSELF."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I WILL BE RENTING A TUXEDO FOR THE BALL, AND I WOULD LIKE IT IF YOU COULD KEEP ANY SNIDE COMMENTS TO YOURSELF."
+    },
+    "comparison": {
+      "panel_id": "1989-04-24_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-24",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "GOSH. EVEN I WOULDN'T MAKE FUN OF A GUY WHO WOULD PAY SIXTY-FIVE BUCKS TO WEAR BORROWED PANTS."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "GOSH. EVEN I WOULDN'T MAKE FUN OF A GUY WHO WOULD PAY SIXTY-FIVE BUCKS TO WEAR BORROWED PANTS."
+    },
+    "comparison": {
+      "panel_id": "1989-04-24_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-25",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I THOUGHT I HAD THIS TUXEDO THING FIGURED OUT. BUT WHAT THE HECK IS THIS?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I THOUGHT I HAD THIS TUXEDO THING FIGURED OUT. BUT WHAT THE HECK IS THIS?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-25_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-25",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "OH, THAT'S THE KUMBERBUZLE. YOU WEAR IT ON YOUR HEAD LIKE A SWEATBAND."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "OH, THAT'S THE KUMBERBUZLE. YOU WEAR IT ON YOUR HEAD LIKE A SWEATBAND."
+    },
+    "comparison": {
+      "panel_id": "1989-04-25_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-25",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "THEN YOU CLIP YOUR PENS AND PENCILS TO THE KUMBERBUZLE."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "THEN YOU CLIP YOUR PENS AND PENCILS TO THE KUMBERBUZLE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-25_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-25",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "AH, THAT EXPLAINS WHY THE SHIRT HAS NO POCKET."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "AH, THAT EXPLAINS WHY THE SHIRT HAS NO POCKET."
+    },
+    "comparison": {
+      "panel_id": "1989-04-25_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-26",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "OH NO... IF THIS GUY TURNS LEFT WHEN I GO RIGHT, WE'LL END UP WALKING DOWN THE HALL RIGHT NEXT TO EACH OTHER."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "OH NO... IF THIS GUY TURNS LEFT WHEN I GO RIGHT, WE'LL END UP WALKING DOWN THE HALL RIGHT NEXT TO EACH OTHER."
+    },
+    "comparison": {
+      "panel_id": "1989-04-26_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-26",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I HATE THIS... A HUGE, EMPTY HALLWAY AND HERE WE ARE SYNCHRONIZED LIKE TWO OF THE ROCKETTES."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I HATE THIS... A HUGE, EMPTY HALLWAY AND HERE WE ARE SYNCHRONIZED LIKE TWO OF THE ROCKETTES."
+    },
+    "comparison": {
+      "panel_id": "1989-04-26_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-26",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "...SO THAT'S WHEN I KNOCKED ON THE LADIES' ROOM DOOR, YELLED \"JANITOR\" AND DUCKED INSIDE."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "...SO THAT'S WHEN I KNOCKED ON THE LADIES' ROOM DOOR, YELLED \"JANITOR\" AND DUCKED INSIDE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-26_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-26",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "AT LEAST YOU MAINTAINED YOUR DIGNITY."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "AT LEAST YOU MAINTAINED YOUR DIGNITY."
+    },
+    "comparison": {
+      "panel_id": "1989-04-26_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-27",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "HOO-HOO-HEE-HA! ... NO, THAT'S NOT IT."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "HOO-HOO-HEE-HA!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-27_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": false
+    }
+  },
+  {
+    "dataset_id": "1989-04-27",
+    "panel_idx": 1,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "",
+      "text": ""
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "...NO, THAT'S NOT IT."
+    },
+    "comparison": {
+      "panel_id": "1989-04-27_p1_l2",
+      "speaker_agreement": false,
+      "text_agreement": false
+    }
+  },
+  {
+    "dataset_id": "1989-04-27",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "DO YOU SUPPOSE OTHER PEOPLE PRACTICE LAUGHING WHEN THEY'RE ALONE?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "DO YOU SUPPOSE OTHER PEOPLE PRACTICE LAUGHING WHEN THEY'RE ALONE?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-27_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-27",
+    "panel_idx": 2,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "OF COURSE."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "OF COURSE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-27_p2_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-27",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "TIME FOR YOUR SNEEZING DRILL."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "TIME FOR YOUR SNEEZING DRILL."
+    },
+    "comparison": {
+      "panel_id": "1989-04-27_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-27",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "OTHER PEOPLE MAKE IT LOOK SO NATURAL."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "OTHER PEOPLE MAKE IT LOOK SO NATURAL."
+    },
+    "comparison": {
+      "panel_id": "1989-04-27_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-28",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "AND WHAT CAN I GET FOR YOU LITTLE FELLOW?"
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "AND WHAT CAN I GET FOR YOU LITTLE FELLOW?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-28_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-28",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I WANT IT ALL!! HA HA! GIVE ME MOUTHWASH, GUM, DEODORANT, LIPSTICK, KRAZY GLUE, ROLAIDS AND ... AND ..."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I WANT IT ALL!! HA HA! GIVE ME MOUTHWASH, GUM, DEODORANT, LIPSTICK, KRAZY GLUE, ROLAIDS AND ... AND ..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-28_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-28",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I PANICKED."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I PANICKED."
+    },
+    "comparison": {
+      "panel_id": "1989-04-28_p3_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-29",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "YOU KNOW WHAT I JUST REALIZED, DOGBERT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "YOU KNOW WHAT I JUST REALIZED, DOGBERT?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-29_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-29",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THE LITTLE HAIRS ON THE BACK OF MY HAND - THEY NEVER GET ANY LONGER."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THE LITTLE HAIRS ON THE BACK OF MY HAND- THEY NEVER GET ANY LONGER."
+    },
+    "comparison": {
+      "panel_id": "1989-04-29_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-29",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "BEFORE I RESPOND, JUST GIVE ME A MOMENT TO BASK IN THE RADIANCE OF YOUR WISDOM."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "BEFORE I RESPOND, JUST GIVE ME A MOMENT TO BASK IN THE RADIANCE OF YOUR WISDOM."
+    },
+    "comparison": {
+      "panel_id": "1989-04-29_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "HEY! DROP THE RAKE !!"
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "HEY! DROP THE RAKE!!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "WHO ARE YOU?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "WHO ARE YOU?"
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 2,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "I'M MOTHER NATURE, WISEGUY, AND I DON'T REMEMBER ASKING YOU TO SHUFFLE MY DEAD TWIGS AROUND."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "I'M MOTHER NATURE, WISEGUY, AND I DON'T REMEMBER ASKING YOU TO SHUFFLE MY DEAD TWIGS AROUND."
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p2_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "UH... GOSH, I WAS JUST TRYING TO TIDY UP A BIT FOR SPRING..."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "UH... GOSH, I WAS JUST TRYING TO TIDY UP A BIT FOR SPRING..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 4,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "ARE YOU SAYING YOU DON'T LIKE MY HOUSEKEEPING !!"
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "ARE YOU SAYING YOU DON'T LIKE MY HOUSEKEEPING!!"
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p4_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 5,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "BUT I..."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "BUT I..."
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p5_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-04-30",
+    "panel_idx": 5,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "THAT'S IT. NO DINNER FOR YOU TONIGHT, AND I'M SENDING LOCUSTS TO EAT YOUR HOUSE."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "THAT'S IT. NO DINNER FOR YOU TONIGHT, AND I'M SENDING LOCUSTS TO EAT YOUR HOUSE."
+    },
+    "comparison": {
+      "panel_id": "1989-04-30_p5_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-01",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "OH GOOD, THE LAST STOP OF THE DAY."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "OH GOOD, THE LAST STOP OF THE DAY."
+    },
+    "comparison": {
+      "panel_id": "1989-05-01_p1_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-01",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "FREEZE, MORTAL! LET ME SEE THE EXPIRATION DATE ON THAT MILK!"
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "FREEZE, MORTAL! LET ME SEE THE EXPIRATION DATE ON THAT MILK!"
+    },
+    "comparison": {
+      "panel_id": "1989-05-01_p2_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-01",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I CAN GO TO HELL FOR DRINKING OLD MILK?!"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I CAN GO TO HELL FOR DRINKING OLD MILK ?!"
+    },
+    "comparison": {
+      "panel_id": "1989-05-01_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-01",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "NAH. I'M FROM \"HECK.\" WE HANDLE THE LITTLE STUFF."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "NAH. I'M FROM \"HECK.\" WE HANDLE THE LITTLE STUFF."
+    },
+    "comparison": {
+      "panel_id": "1989-05-01_p3_l2",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-02",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "GOSH. I THOUGHT \"HECK\" WAS JUST A FIGURE OF SPEECH."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "GOSH. I THOUGHT \"HECK\" WAS JUST A FIGURE OF SPEECH."
+    },
+    "comparison": {
+      "panel_id": "1989-05-02_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-02",
+    "panel_idx": 1,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "YEAH. A LOT OF PEOPLE THINK THEY CAN GET AWAY WITH MINOR INFRACTIONS."
+    },
+    "model_b_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "YEAH. A LOT OF PEOPLE THINK THEY CAN GET AWAY WITH MINOR INFRACTIONS."
+    },
+    "comparison": {
+      "panel_id": "1989-05-02_p1_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-02",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "ACCORDING TO MY RECORDS, LAST MONTH YOU DELIBERATELY ASKED FOR THREE LITTLE KETCHUPS AT McDONALD'S WHEN YOU KNEW YOU ONLY NEEDED TWO."
+    },
+    "model_b_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "ACCORDING TO MY RECORDS, LAST MONTH YOU DELIBERATELY ASKED FOR THREE LITTLE KETCHUPS AT MCDONALD'S WHEN YOU KNEW YOU ONLY NEEDED TWO."
+    },
+    "comparison": {
+      "panel_id": "1989-05-02_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-02",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I KNEW THAT WOULD COME BACK TO HAUNT ME. LOOK, I STILL HAVE THE EXTRA ONE. I'LL GIVE IT BACK!"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I KNEW THAT WOULD COME BACK TO HAUNT ME. LOOK, I STILL HAVE THE EXTRA ONE. I'LL GIVE IT BACK!"
+    },
+    "comparison": {
+      "panel_id": "1989-05-02_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-02",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "SHAME SHAME..."
+    },
+    "model_b_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "SHAME SHAME ..."
+    },
+    "comparison": {
+      "panel_id": "1989-05-02_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-03",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "GEE, IF YOU'RE THE RULER OF \"HECK\" YOU MUST HAVE SOME KIND OF AWESOME NAME."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "GEE, IF YOU'RE THE RULER OF \"HECK\" YOU MUST HAVE SOME KIND OF AWESOME NAME."
+    },
+    "comparison": {
+      "panel_id": "1989-05-03_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-03",
+    "panel_idx": 1,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "YEAH."
+    },
+    "model_b_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "YEAH."
+    },
+    "comparison": {
+      "panel_id": "1989-05-03_p1_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-03",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "WELL, WHAT IS IT? SOMETHING LIKE \"KING OF EVIL\" OR \"LORD OF DARKNESS\"?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "WELL, WHAT IS IT? SOMETHING LIKE \"KING OF EVIL\" OR \"LORD OF DARKNESS\"?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-03_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-03",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "YOU CAN CALL ME PHIL, PRINCE OF INSUFFICIENT LIGHT."
+    },
+    "model_b_raw": {
+      "speaker": "Phil, Prince of Insufficient Light",
+      "text": "YOU CAN CALL ME PHIL, PRINCE OF INSUFFICIENT LIGHT."
+    },
+    "comparison": {
+      "panel_id": "1989-05-03_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-04",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "AH HAH! JUST AS I SUSPECTED."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "AH HAH! JUST AS I SUSPECTED."
+    },
+    "comparison": {
+      "panel_id": "1989-05-04_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-04",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "HERE IT IS: MATHEMATICAL PROOF THAT ATTRACTIVE SINGLE WOMEN EXIST ONLY IN WHITE VOLKSWAGEN RABBITS AND AEROBICS CLASSES."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "HERE IT IS: MATHEMATICAL PROOF THAT ATTRACTIVE SINGLE WOMEN EXIST ONLY IN WHITE VOLKSWAGEN RABBITS AND AEROBICS CLASSES."
+    },
+    "comparison": {
+      "panel_id": "1989-05-04_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-04",
+    "panel_idx": 2,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "HOW DO YOU EXPLAIN VANNA WHITE?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "HOW DO YOU EXPLAIN VANNA WHITE?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-04_p2_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-04",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I WONDER IF ISAAC NEWTON HAD A DOG."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I WONDER IF ISAAC NEWTON HAD A DOG."
+    },
+    "comparison": {
+      "panel_id": "1989-05-04_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-04",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "OR A GIRLFRIEND."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "OR A GIRLFRIEND."
+    },
+    "comparison": {
+      "panel_id": "1989-05-04_p3_l2",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-05",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I THINK YOU SHOULD SEE A LAWYER BEFORE UNLEASHING THIS NEW INVENTION ON MANKIND."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I THINK YOU SHOULD SEE A LAWYER BEFORE UNLEASHING THIS NEW INVENTION ON MANKIND."
+    },
+    "comparison": {
+      "panel_id": "1989-05-05_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-05",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "... I'M AFRAID MY NEW INVENTION WILL EXPOSE ME TO LOTS OF LAWSUITS."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "...I'M AFRAID MY NEW INVENTION WILL EXPOSE ME TO LOTS OF LAWSUITS."
+    },
+    "comparison": {
+      "panel_id": "1989-05-05_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-05",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "WILL YOU ADVISE ME?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "WILL YOU ADVISE ME?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-05_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-05",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "NO. SOUNDS LIKE I CAN MAKE MORE MONEY BY SUING YOU."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "NO. SOUNDS LIKE I CAN MAKE MORE MONEY BY SUING YOU."
+    },
+    "comparison": {
+      "panel_id": "1989-05-05_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-06",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "GEE, HOW COULD ANYBODY BE OPPOSED TO BUILDING MORE ROADS?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "GEE, HOW COULD ANYBODY BE OPPOSED TO BUILDING MORE ROADS?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-06_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-06",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "EVERY TIME I SEE HIGHWAY CONSTRUCTION..."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "EVERY TIME I SEE HIGHWAY CONSTRUCTION ..."
+    },
+    "comparison": {
+      "panel_id": "1989-05-06_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-06",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "... SOME PROTESTER HAS ALREADY PUT UP A SIGN."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "... SOME PROTESTER HAS ALREADY PUT UP A SIGN."
+    },
+    "comparison": {
+      "panel_id": "1989-05-06_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THIS IS A VERY FANCY PLACE, DOGBERT, SO DON'T EMBARRASS ME."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THIS IS A VERY FANCY PLACE, DOGBERT, SO DON'T EMBARRASS ME."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "UH... TWO PLEASE. NON-SMOKING."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "UH... TWO PLEASE. NON-SMOKING."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 2,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "I'M AFRAID, MONSIEUR, THAT JACKETS ARE REQUIRED."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "I'M AFRAID, MONSIEUR, THAT JACKETS ARE REQUIRED."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p2_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "YOU MAY WEAR THESE COMPLIMENTARY HOUSE JACKETS WHILE YOU DINE."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "YOU MAY WEAR THESE COMPLIMENTARY HOUSE JACKETS WHILE YOU DINE."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 4,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "YOU MUST ALSO WEAR THESE BEAVER HATS AND CLOWN FEET."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "YOU MUST ALSO WEAR THESE BEAVER HATS AND CLOWN FEET."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p4_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 5,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "NEXT TIME MESSIEURS WILL REMEMBER THEIR JACKETS."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "NEXT TIME MESSIEURS WILL REMEMBER THEIR JACKETS."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p5_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-07",
+    "panel_idx": 5,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "LOOKS LIKE WE NARROWLY AVOIDED EMBARRASSMENT."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "LOOKS LIKE WE NARROWLY AVOIDED EMBARRASSMENT."
+    },
+    "comparison": {
+      "panel_id": "1989-05-07_p5_l2",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-08",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "UH... EXCUSE ME, EARTH DOG."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "UH... EXCUSE ME, EARTH DOG."
+    },
+    "comparison": {
+      "panel_id": "1989-05-08_p1_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-08",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "WE HAVE TRAVELED FROM A DISTANT PLANET TO FIND OUT WHY EARTH DOGS ARE FORCED TO EAT FROM DIRTY LITTLE BOWLS WHILE HUMANS USE PLATES."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "WE HAVE TRAVELED FROM A DISTANT PLANET TO FIND OUT WHY EARTH DOGS ARE FORCED TO EAT FROM DIRTY LITTLE BOWLS WHILE HUMANS USE PLATES."
+    },
+    "comparison": {
+      "panel_id": "1989-05-08_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-08",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "WELL, BASICALLY, IT'S POLITICAL. IT ALL BEGAN AFTER THE UNSUCCESSFUL POODLE REBELLION IN FRANCE, AROUND 1723..."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "WELL, BASICALLY, IT'S POLITICAL. IT ALL BEGAN AFTER THE UNSUCCESSFUL POODLE REBELLION IN FRANCE, AROUND 1723..."
+    },
+    "comparison": {
+      "panel_id": "1989-05-08_p3_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-08",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "BETTER USE A PENCIL..."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "BETTER USE A PENCIL ..."
+    },
+    "comparison": {
+      "panel_id": "1989-05-08_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-09",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I'M WRITING MY FIRST BUSINESS MANAGEMENT BOOK, \"MANAGING IN A BUREAUCRACY.\""
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I'M WRITING MY FIRST BUSINESS MANAGEMENT BOOK, \"MANAGING IN A BUREAUCRACY.\" "
+    },
+    "comparison": {
+      "panel_id": "1989-05-09_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-09",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "\"YOU KNOW YOU'RE IN A BUREAUCRACY WHEN A HUNDRED PEOPLE WHO THINK 'A' GET TOGETHER AND COMPROMISE ON 'B.'\""
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "\"YOU KNOW YOU'RE IN A BUREAUCRACY WHEN A HUNDRED PEOPLE WHO THINK 'A' GET TOGETHER AND COMPROMISE ON 'B.'\""
+    },
+    "comparison": {
+      "panel_id": "1989-05-09_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-09",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THINK ANYBODY WILL READ IT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THINK ANYBODY WILL READ IT?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-09_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-09",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "IT DOESN'T MATTER. THE REAL MONEY IS ON THE LECTURE CIRCUIT."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "IT DOESN'T MATTER. THE REAL MONEY IS ON THE LECTURE CIRCUIT."
+    },
+    "comparison": {
+      "panel_id": "1989-05-09_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-10",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "CHAPTER IV. \"TIME MANAGEMENT\""
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "CHAPTER IV. \"TIME MANAGEMENT\""
+    },
+    "comparison": {
+      "panel_id": "1989-05-10_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-10",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "\"ALWAYS POSTPONE MEETINGS WITH TIME-WASTING MORONS.\""
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "\"ALWAYS POSTPONE MEETINGS WITH TIME-WASTING MORONS.\" "
+    },
+    "comparison": {
+      "panel_id": "1989-05-10_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-10",
+    "panel_idx": 2,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "HOW DO YOU DO THAT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "HOW DO YOU DO THAT?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-10_p2_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-10",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "CAN I GET BACK TO YOU ON THAT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "CAN I GET BACK TO YOU ON THAT?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-10_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-11",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "WELCOME TO ELECTRODE HUT. I'M HALF YOUR AGE, AND I KNOW MORE ABOUT ELECTRONICS THAN YOU EVER WILL. MAY I HELP YOU?"
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "WELCOME TO ELECTRODE HUT. I'M HALF YOUR AGE, AND I KNOW MORE ABOUT ELECTRONICS THAN YOU EVER WILL. MAY I HELP YOU?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-11_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-11",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "YES. I WOULD LIKE A HALF-DOZEN NIAD PULSE CONVERTERS AND AN ANZA BRUSH."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "YES. I WOULD LIKE A HALF-DOZEN NIAD PULSE CONVERTERS AND AN ANZA BRUSH."
+    },
+    "comparison": {
+      "panel_id": "1989-05-11_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-11",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "OR AM I BLUFFING?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "OR AM I BLUFFING?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-11_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-11",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Unknown",
+      "text": "THIS GUY IS GOOD."
+    },
+    "model_b_raw": {
+      "speaker": "Unknown",
+      "text": "THIS GUY IS GOOD."
+    },
+    "comparison": {
+      "panel_id": "1989-05-11_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-12",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "DO YOU REALIZE THAT IF WE STAY TOGETHER FOR SEVEN YEARS, WE ARE CONSIDERED MARRIED BY COMMON LAW?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "DO YOU REALIZE THAT IF WE STAY TOGETHER FOR SEVEN YEARS, WE ARE CONSIDERED MARRIED BY COMMON LAW?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-12_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-12",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "THAT MEANS I OWN HALF OF ALL YOUR WORLDLY POSSESSIONS."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THAT MEANS I OWN HALF OF ALL YOUR WORLDLY POSSESSIONS."
+    },
+    "comparison": {
+      "panel_id": "1989-05-12_p2_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-12",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I PLAN TO SELL MY HALF... MAYBE BUY SOME TASTEFUL THINGS INSTEAD."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I PLAN TO SELL MY HALF ... MAYBE BUY SOME TASTEFUL THINGS INSTEAD."
+    },
+    "comparison": {
+      "panel_id": "1989-05-12_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-13",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "IT'S SO AWKWARD TO WALK PAST STRANGERS IN HALLWAYS; YOU ALWAYS GOTTA AVOID EYE CONTACT."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "IT'S SO AWKWARD TO WALK PAST STRANGERS IN HALLWAYS; YOU ALWAYS GOTTA AVOID EYE CONTACT."
+    },
+    "comparison": {
+      "panel_id": "1989-05-13_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-13",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "I KNOW-I'LL WAIT UNTIL WE'RE NEAR AND THEN PICK UP THAT LITTLE PIECE OF FUZZ ON THE CARPET THERE."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "I KNOW--I'LL WAIT UNTIL WE'RE NEAR AND THEN PICK UP THAT LITTLE PIECE OF FUZZ ON THE CARPET THERE."
+    },
+    "comparison": {
+      "panel_id": "1989-05-13_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-13",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "...THEN WE BOTH WENT FOR THE CARPET FUZZ."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "...THEN WE BOTH WENT FOR THE CARPET FUZZ."
+    },
+    "comparison": {
+      "panel_id": "1989-05-13_p3_l1",
+      "speaker_agreement": false,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-13",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "SMOOTH."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "SMOOTH."
+    },
+    "comparison": {
+      "panel_id": "1989-05-13_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "... AND AS YOU CAN SEE ..."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "...AND AS YOU CAN SEE ..."
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "UH OH ... I GOT AN ITCH IN MY NOSE."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "UH OH... I GOT AN ITCH IN MY NOSE."
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "... CAN'T SCRATCH IT NOW WITHOUT LOOKING UNPROFESSIONAL."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "...CAN'T SCRATCH IT NOW WITHOUT LOOKING UNPROFESSIONAL."
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "UH..."
+    },
+    "model_b_raw": {
+      "speaker": "",
+      "text": ""
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p3_l2",
+      "speaker_agreement": false,
+      "text_agreement": false
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 4,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "MAYBE I CAN CASUALLY SCRATCH IT WITH ONE SMOOTH GESTURE TOWARD THE EASEL."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "MAYBE I CAN CASUALLY SCRATCH IT WITH ONE SMOOTH GESTURE TOWARD THE EASEL."
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p4_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 5,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "THERE'S A GOOD CHANCE THEY THOUGHT IT WAS PART OF THE PRESENTATION."
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "THERE'S A GOOD CHANCE THEY THOUGHT IT WAS PART OF THE PRESEN-TATION."
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p5_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-14",
+    "panel_idx": 5,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "DID THE PARAMEDICS REMOVE THE POINTER OR JUST TAPE OVER IT?"
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "DID THE PARAMEDICS REMOVE THE POINTER OR JUST TAPE OVER IT?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-14_p5_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-15",
+    "panel_idx": 1,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "WELL? WHAT DO YOU THINK OF MY NEW POEM?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "WELL? WHAT DO YOU THINK OF MY NEW POEM?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-15_p1_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-15",
+    "panel_idx": 2,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "I ONCE READ THAT GIVEN INFINITE TIME, A THOUSAND MONKEYS WITH TYPEWRITERS WOULD EVENTUALLY WRITE THE ENTIRE WORKS OF SHAKESPEARE."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "I ONCE READ THAT GIVEN INFINITE TIME, A THOUSAND MONKEYS WITH TYPEWRITERS WOULD EVENTUALLY WRITE THE ENTIRE WORKS OF SHAKESPEARE."
+    },
+    "comparison": {
+      "panel_id": "1989-05-15_p2_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-15",
+    "panel_idx": 3,
+    "line_idx": 1,
+    "model_a_raw": {
+      "speaker": "Dilbert",
+      "text": "BUT WHAT ABOUT MY POEM?"
+    },
+    "model_b_raw": {
+      "speaker": "Dilbert",
+      "text": "BUT WHAT ABOUT MY POEM?"
+    },
+    "comparison": {
+      "panel_id": "1989-05-15_p3_l1",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  },
+  {
+    "dataset_id": "1989-05-15",
+    "panel_idx": 3,
+    "line_idx": 2,
+    "model_a_raw": {
+      "speaker": "Dogbert",
+      "text": "THREE MONKEYS, TEN MINUTES."
+    },
+    "model_b_raw": {
+      "speaker": "Dogbert",
+      "text": "THREE MONKEYS, TEN MINUTES."
+    },
+    "comparison": {
+      "panel_id": "1989-05-15_p3_l2",
+      "speaker_agreement": true,
+      "text_agreement": true
+    }
+  }
+]

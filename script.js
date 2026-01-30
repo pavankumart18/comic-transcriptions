@@ -1,3 +1,4 @@
+import * as d3 from "d3";
 import { asyncLLM } from "asyncllm";
 import { bootstrapAlert } from "bootstrap-alert";
 import { openaiConfig } from "bootstrap-llm-provider";
@@ -13,19 +14,37 @@ const $ = (selector, el = document) => el.querySelector(selector);
 const loading = html`<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>`;
 
 // State
-let dashboardData = null;
+let fullData = null;
+let comparisonData = null; // New state
 let modalInstance = null;
-let sortState = { col: 'id', width: 0, asc: true }; // 'id', 'average', or model_name
+let sortStates = {
+    1: { col: 'id', width: 0, asc: true },
+    2: { col: 'id', width: 0, asc: true }
+};
+let aggSortStates = {
+    1: { col: 'score', asc: false },
+    2: { col: 'score', asc: false }
+};
 
 // Initialize
 (async function init() {
     try {
-        const res = await fetch('data/dashboard_data.json');
-        dashboardData = await res.json();
+        const [res, resComp] = await Promise.all([
+            fetch('data/dashboard_data.json'),
+            fetch('data/comparison_results.json')
+        ]);
 
-        // Render Dashboard Table
-        renderTable();
-        renderAggregatedTable();
+        fullData = await res.json();
+        comparisonData = await resComp.json();
+
+        $("#loading").classList.add("d-none");
+
+        // Render Evaluation Results (Dataset 2)
+        renderAggregatedTable(fullData.dataset2, "#toptable2", 2);
+        renderTable(fullData.dataset2, "#output2", 2);
+
+        // Render Comparison Dashboard
+        renderComparisonDashboard(comparisonData);
 
         // Initialize Modal
         modalInstance = new bootstrap.Modal(document.getElementById('detailModal'));
@@ -36,13 +55,13 @@ let sortState = { col: 'id', width: 0, asc: true }; // 'id', 'average', or model
     }
 })();
 
-function renderTable() {
-    $("#loading").classList.add("d-none");
+function renderTable(dataset, selector, setId) {
+    if (!dataset) return;
+    const sortState = sortStates[setId];
+    const models = dataset.all_models; // Already sorted in backend, but we might resort here
 
-    const models = dashboardData.all_models.sort();
-
-    // Sorting Logic
-    const sortedStrips = [...dashboardData.strips].sort((a, b) => {
+    // Sorting Logic associated with this specific table
+    const sortedStrips = [...dataset.strips].sort((a, b) => {
         let valA, valB;
 
         if (sortState.col === 'id') {
@@ -52,8 +71,6 @@ function renderTable() {
             valA = a.average;
             valB = b.average;
         } else {
-            // Sort by specific model score
-            // Handle missing scores (treat as -1 for sorting to put at bottom/top)
             valA = a.models[sortState.col] ? a.models[sortState.col].score : -1;
             valB = b.models[sortState.col] ? b.models[sortState.col].score : -1;
         }
@@ -74,31 +91,33 @@ function renderTable() {
                 <table class="table table-hover mb-0 align-middle" style="width: auto; min-width: 100%;">
                     <thead class="text-secondary text-uppercase small fw-bold">
                         <tr>
-                            <th class="ps-4 sortable" @click=${() => sortBy('id')} style="width: 140px;">
+                            <th class="ps-4 sortable" @click=${() => sortBy('id', setId)} style="width: 140px;">
                                 Date / ID ${getSortIcon('id')}
                             </th>
                             ${models.map(m => html`
-                                <th class="text-center sortable" @click=${() => sortBy(m)} style="width: 100px;">
+                                <th class="text-center sortable" @click=${() => sortBy(m, setId)} style="width: 100px;">
                                     ${m} ${getSortIcon(m)}
                                 </th>
                             `)}
-                            <th class="text-end pe-4 sortable" @click=${() => sortBy('average')} style="width: 100px;">
+                            <th class="text-end pe-4 sortable" @click=${() => sortBy('average', setId)} style="width: 100px;">
                                 Average ${getSortIcon('average')}
                             </th>
                         </tr>
                     </thead>
                     <tbody class="border-top-0">
                         ${sortedStrips.map(strip => html`
-                            <tr class="cursor-pointer" @click=${() => openModal(strip.id)} style="cursor: pointer;">
+                            <tr class="cursor-pointer" @click=${() => openModal(strip.id, dataset)} style="cursor: pointer;">
                                 <td class="ps-4 fw-medium text-primary">${strip.id}</td>
                                 ${models.map(m => {
         const score = strip.models[m] ? strip.models[m].score : '-';
+        const bgColor = getScoreColor(score);
+        const textColor = getTextColor(score);
         return html`<td class="p-0 text-center border-start border-end" style="width: 100px;">
-                                        <div class="score-badge ${getScoreClass(score)}">${score}${score !== '-' ? '%' : ''}</div>
+                                        <div class="score-badge" style="background-color: ${bgColor}; color: ${textColor}">${score}${score !== '-' ? '%' : ''}</div>
                                     </td>`;
     })}
                                 <td class="p-0 text-center border-start bg-body-tertiary" style="width: 100px;">
-                                    <div class="score-badge ${getScoreClass(strip.average)}">${strip.average}%</div>
+                                    <div class="score-badge" style="background-color: ${getScoreColor(strip.average)}; color: ${getTextColor(strip.average)}">${strip.average}%</div>
                                 </td>
                             </tr>
                         `)}
@@ -108,7 +127,7 @@ function renderTable() {
                             <td class="ps-4">Model Average</td>
                             ${models.map(m => html`
                                 <td class="p-0 text-center">
-                                    <div class="score-badge ${getScoreClass(dashboardData.model_stats[m])}">${dashboardData.model_stats[m]}%</div>
+                                    <div class="score-badge" style="background-color: ${getScoreColor(dataset.model_stats[m])}; color: ${getTextColor(dataset.model_stats[m])}">${dataset.model_stats[m]}%</div>
                                 </td>
                             `)}
                             <td></td>
@@ -117,68 +136,201 @@ function renderTable() {
                 </table>
             </div>
         </div>
-    `, $("#output"));
+    `, $(selector));
 }
 
-function sortBy(col) {
-    if (sortState.col === col) {
-        sortState.asc = !sortState.asc;
+function sortBy(col, setId) {
+    const state = sortStates[setId];
+    if (state.col === col) {
+        state.asc = !state.asc;
     } else {
-        sortState.col = col;
-        // Default sort direction: ID -> asc, Scores -> desc
-        sortState.asc = (col === 'id');
+        state.col = col;
+        state.asc = (col === 'id');
     }
-    renderTable();
+
+    // Re-render only the affected table
+    if (setId === 1) renderTable(fullData.dataset1, "#output1", 1);
+    else renderTable(fullData.dataset2, "#output2", 2);
 }
 
-function getScoreClass(score) {
-    if (score === '-') return 'text-muted';
+function renderAggregatedTable(dataset, selector, setId) {
+    if (!dataset) return;
+    const aggState = aggSortStates[setId];
+    const models = dataset.all_models;
+    const stats = {};
+
+    models.forEach(m => {
+        stats[m] = {
+            count: 0,
+            score: 0,
+            text_accuracy: 0,
+            speaker_accuracy: 0,
+            capitalization_accuracy: 0,
+            panel_alignment: 0,
+            hallucination_penalty: 0
+        };
+    });
+
+    dataset.strips.forEach(strip => {
+        models.forEach(m => {
+            const data = strip.models[m];
+            if (data) {
+                stats[m].count++;
+                stats[m].score += parseFloat(data.score) || 0;
+                stats[m].text_accuracy += parseFloat(data.metrics.text_accuracy) || 0;
+                stats[m].speaker_accuracy += parseFloat(data.metrics.speaker_accuracy) || 0;
+                stats[m].capitalization_accuracy += parseFloat(data.metrics.capitalization_accuracy) || 0;
+                stats[m].panel_alignment += parseFloat(data.metrics.panel_alignment) || 0;
+                stats[m].hallucination_penalty += parseFloat(data.metrics.hallucination_penalty) || 0;
+            }
+        });
+    });
+
+    let aggregatedData = models.map(m => {
+        const c = stats[m].count || 1;
+        return {
+            name: m,
+            count: stats[m].count,
+            score: parseFloat((stats[m].score / c).toFixed(1)),
+            text_accuracy: parseFloat((stats[m].text_accuracy / c).toFixed(1)),
+            speaker_accuracy: parseFloat((stats[m].speaker_accuracy / c).toFixed(1)),
+            capitalization_accuracy: parseFloat((stats[m].capitalization_accuracy / c).toFixed(1)),
+            panel_alignment: parseFloat((stats[m].panel_alignment / c).toFixed(1)),
+            hallucination_penalty: parseFloat((stats[m].hallucination_penalty / c).toFixed(1))
+        };
+    });
+
+    aggregatedData.sort((a, b) => {
+        let valA = a[aggState.col];
+        let valB = b[aggState.col];
+
+        if (aggState.col === 'name') {
+            if (valA < valB) return aggState.asc ? -1 : 1;
+            if (valA > valB) return aggState.asc ? 1 : -1;
+            return 0;
+        }
+
+        if (valA < valB) return aggState.asc ? -1 : 1;
+        if (valA > valB) return aggState.asc ? 1 : -1;
+        return 0;
+    });
+
+    const getAggSortIcon = (col) => {
+        if (aggState.col !== col) return '';
+        return aggState.asc ? html`<i class="bi bi-caret-up-fill sort-icon"></i>` : html`<i class="bi bi-caret-down-fill sort-icon"></i>`;
+    };
+
+    const sortAgg = (col) => {
+        if (aggState.col === col) {
+            aggState.asc = !aggState.asc;
+        } else {
+            aggState.col = col;
+            aggState.asc = (col === 'name');
+        }
+        renderAggregatedTable(dataset, selector, setId);
+    };
+
+    render(html`
+        <div class="card shadow-sm border-0 mb-4 overflow-hidden">
+            <div class="card-header bg-body-tertiary border-0 py-3">
+                <h5 class="card-title mb-0 fw-bold text-uppercase small text-body-secondary"><i class="bi bi-trophy me-2"></i>Overall Model Statistics</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0 align-middle" style="width: auto; min-width: 100%;">
+                    <thead class="text-secondary text-uppercase small fw-bold">
+                        <tr>
+                            <th class="ps-4 sortable" @click=${() => sortAgg('name')}>Model ${getAggSortIcon('name')}</th>
+                            <th class="text-center sortable" @click=${() => sortAgg('score')} style="width: 100px;">Avg Score ${getAggSortIcon('score')}</th>
+                            <th class="text-center sortable" @click=${() => sortAgg('text_accuracy')} style="width: 100px;">Text (40) ${getAggSortIcon('text_accuracy')}</th>
+                            <th class="text-center sortable" @click=${() => sortAgg('speaker_accuracy')} style="width: 100px;">Spkr (25) ${getAggSortIcon('speaker_accuracy')}</th>
+                            <th class="text-center sortable" @click=${() => sortAgg('capitalization_accuracy')} style="width: 100px;">Caps (15) ${getAggSortIcon('capitalization_accuracy')}</th>
+                            <th class="text-center sortable" @click=${() => sortAgg('panel_alignment')} style="width: 100px;">Panel (10) ${getAggSortIcon('panel_alignment')}</th>
+                            <th class="text-center sortable pe-4" @click=${() => sortAgg('hallucination_penalty')} style="width: 100px;">Halluc (10) ${getAggSortIcon('hallucination_penalty')}</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-top-0">
+                        ${aggregatedData.map((m, i) => html`
+                            <tr class="${i === 0 && aggState.col === 'score' && !aggState.asc ? 'bg-body-tertiary' : ''}">
+                                <td class="ps-4 fw-medium text-body-emphasis">${m.name}</td>
+                                <td class="text-center p-0 border-start border-end" style="width: 100px;">
+                                    <div class="score-badge" style="background-color: ${getScoreColor(m.score)}; color: ${getTextColor(m.score)}">${m.score}%</div>
+                                </td>
+                                <td class="text-center p-0 border-end" style="width: 100px;">
+                                    <div class="score-badge" style="background-color: ${getCompScoreColor(m.text_accuracy, 40)}; color: ${getCompTextColor(m.text_accuracy, 40)}">${m.text_accuracy}</div>
+                                </td>
+                                <td class="text-center p-0 border-end" style="width: 100px;">
+                                    <div class="score-badge" style="background-color: ${getCompScoreColor(m.speaker_accuracy, 25)}; color: ${getCompTextColor(m.speaker_accuracy, 25)}">${m.speaker_accuracy}</div>
+                                </td>
+                                <td class="text-center p-0 border-end" style="width: 100px;">
+                                    <div class="score-badge" style="background-color: ${getCompScoreColor(m.capitalization_accuracy, 15)}; color: ${getCompTextColor(m.capitalization_accuracy, 15)}">${m.capitalization_accuracy}</div>
+                                </td>
+                                <td class="text-center p-0 border-end" style="width: 100px;">
+                                    <div class="score-badge" style="background-color: ${getCompScoreColor(m.panel_alignment, 10)}; color: ${getCompTextColor(m.panel_alignment, 10)}">${m.panel_alignment}</div>
+                                </td>
+                                <td class="text-center p-0" style="width: 100px;">
+                                    <div class="score-badge" style="background-color: ${getCompScoreColor(m.hallucination_penalty, 10)}; color: ${getCompTextColor(m.hallucination_penalty, 10)}">${(10 - m.hallucination_penalty).toFixed(1)}</div>
+                                </td>
+                            </tr>
+                        `)}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `, $(selector));
+}
+
+// D3 Color Scales
+function getScoreColor(score) {
+    if (score === '-' || score === null || score === undefined) return '#f8f9fa'; // bg-body-tertiary equivalent
+    const val = parseFloat(score);
+    // Map 50-100 mostly, as <50 is very bad. 
+    // Usually interpolation should be linear 0-100?
+    // Let's do strict 0-100 for continuous scale.
+    // Using RdYlGn: Red (0) -> Yellow (0.5) -> Green (1.0)
+    return d3.interpolateRdYlGn(val / 100);
+}
+
+function getTextColor(score) {
+    if (score === '-' || score === null || score === undefined) return '#6c757d'; // text-muted
     const s = parseFloat(score);
-    if (s >= 90) return 'bg-score-high';
-    if (s >= 80) return 'bg-score-good';
-    if (s >= 70) return 'bg-score-mid';
-    if (s >= 50) return 'bg-score-low';
-    return 'bg-score-bad';
+    const color = d3.color(d3.interpolateRdYlGn(s / 100));
+    // Check luminance. RdYlGn(0.5) is very light (Yellow). RdYlGn(0) is Dark Red. RdYlGn(1) is Dark Green.
+    // Use Lab lightness:
+    return d3.lab(color).l > 60 ? '#000' : '#fff';
 }
 
-// Helper to get score class based on percentage of max points
-function getCompScoreClass(val, max) {
-    const pct = (val / max) * 100;
-    if (pct >= 90) return 'bg-score-high';
-    if (pct >= 80) return 'bg-score-good';
-    if (pct >= 70) return 'bg-score-mid';
-    if (pct >= 50) return 'bg-score-low';
-    return 'bg-score-bad';
+function getCompScoreColor(val, max) {
+    if (val === undefined || val === null) return '#f8f9fa';
+    const pct = parseFloat(val) / max;
+    return d3.interpolateRdYlGn(pct);
 }
 
-function openModal(id) {
-    const strip = dashboardData.strips.find(s => s.id === id);
+function getCompTextColor(val, max) {
+    if (val === undefined || val === null) return '#6c757d';
+    const pct = parseFloat(val) / max;
+    const color = d3.color(d3.interpolateRdYlGn(pct));
+    return d3.lab(color).l > 60 ? '#000' : '#fff';
+}
+
+function openModal(id, dataset) {
+    const strip = dataset.strips.find(s => s.id === id);
     if (!strip) return;
 
-    // Set Text Content
     $("#detailModalLabel").textContent = `Analysis: ${id}`;
 
-    // Elements
     const img = $("#modal-img");
     const loader = $("#img-loader");
     const viewImageBtn = $("#view-image-btn");
 
-    // Reset State
     img.classList.add('d-none');
     loader.classList.remove('d-none');
-    // We can show the view button immediately as it's just the direct link
     viewImageBtn.classList.remove('d-none');
-
-    // Set URLs
     viewImageBtn.href = strip.url;
-
-    // Load Image
     img.src = strip.url;
 
     img.onerror = () => {
         loader.classList.add('d-none');
         img.classList.add('d-none');
-        // Image failed, but user can still try the link
     };
 
     img.onload = () => {
@@ -186,9 +338,7 @@ function openModal(id) {
         img.classList.remove('d-none');
     };
 
-    // Render Content
     render(html`
-        <!-- Section A: Ground Truth -->
         <div class="card border-0 bg-body-tertiary rounded-3">
             <div class="card-header bg-transparent border-0 text-uppercase small text-body-secondary fw-bold pb-0">Section A — Ground Truth</div>
             <div class="card-body">
@@ -198,7 +348,6 @@ function openModal(id) {
             </div>
         </div>
 
-        <!-- Section B: Leaderboard -->
         <div>
             <h6 class="text-uppercase small text-body-secondary fw-bold mb-3">Section B — Model Performance</h6>
             <div class="table-responsive border rounded-3">
@@ -224,7 +373,6 @@ function openModal(id) {
             </div>
         </div>
         
-        <!-- Section C: Notes -->
         <div>
              <h6 class="text-uppercase small text-body-secondary fw-bold mb-3">Section C — Judge's Notes</h6>
              <div class="d-flex flex-column gap-3">
@@ -260,31 +408,26 @@ function openModal(id) {
 }
 
 function renderModelRow(m) {
-    // Re-use logic for row styling if needed, or keep simple text score for modal detail
-    // Modal detail doesn't need background badges necessarily, but let's keep it consistent if desired.
-    // Use badges here too? The user said "Visulization Improvements".
-    // For the modal detail table, let's use the badges for the Score column.
-
     return html`
         <tr>
             <td class="ps-3 fw-medium text-body-emphasis small">${m.name}</td>
             <td class="p-0 text-center border-start border-end" style="width: 100px;">
-                <div class="score-badge ${getScoreClass(m.score)}">${m.score}</div>
+                <div class="score-badge" style="background-color: ${getScoreColor(m.score)}; color: ${getTextColor(m.score)}">${m.score}</div>
             </td>
             <td class="p-0 text-center border-end" style="width: 100px;">
-                <div class="score-badge ${getCompScoreClass(m.metrics.text_accuracy, 40)}">${m.metrics.text_accuracy}</div>
+                <div class="score-badge" style="background-color: ${getCompScoreColor(m.metrics.text_accuracy, 40)}; color: ${getCompTextColor(m.metrics.text_accuracy, 40)}">${m.metrics.text_accuracy}</div>
             </td>
             <td class="p-0 text-center border-end" style="width: 100px;">
-                <div class="score-badge ${getCompScoreClass(m.metrics.speaker_accuracy, 25)}">${m.metrics.speaker_accuracy}</div>
+                <div class="score-badge" style="background-color: ${getCompScoreColor(m.metrics.speaker_accuracy, 25)}; color: ${getCompTextColor(m.metrics.speaker_accuracy, 25)}">${m.metrics.speaker_accuracy}</div>
             </td>
             <td class="p-0 text-center border-end" style="width: 100px;">
-                <div class="score-badge ${getCompScoreClass(m.metrics.capitalization_accuracy, 15)}">${m.metrics.capitalization_accuracy}</div>
+                <div class="score-badge" style="background-color: ${getCompScoreColor(m.metrics.capitalization_accuracy, 15)}; color: ${getCompTextColor(m.metrics.capitalization_accuracy, 15)}">${m.metrics.capitalization_accuracy}</div>
             </td>
             <td class="p-0 text-center border-end" style="width: 100px;">
-                <div class="score-badge ${getCompScoreClass(m.metrics.panel_alignment, 10)}">${m.metrics.panel_alignment}</div>
+                <div class="score-badge" style="background-color: ${getCompScoreColor(m.metrics.panel_alignment, 10)}; color: ${getCompTextColor(m.metrics.panel_alignment, 10)}">${m.metrics.panel_alignment}</div>
             </td>
             <td class="p-0 text-center" style="width: 100px;">
-                <div class="score-badge ${getCompScoreClass(m.metrics.hallucination_penalty, 10)}">${(10 - parseFloat(m.metrics.hallucination_penalty)).toFixed(1)}</div>
+                <div class="score-badge" style="background-color: ${getCompScoreColor(m.metrics.hallucination_penalty, 10)}; color: ${getCompTextColor(m.metrics.hallucination_penalty, 10)}">${(10 - parseFloat(m.metrics.hallucination_penalty)).toFixed(1)}</div>
             </td>
         </tr>
     `;
@@ -303,13 +446,11 @@ function toggleDetail(e, name) {
 }
 
 function renderTranscriptOutput(data) {
-    // Check if it's a string needing parse
     let parsedData = data;
     if (typeof data === 'string') {
         try { parsedData = JSON.parse(data); } catch (e) { }
     }
 
-    // Try to find panels
     let panels = null;
     if (parsedData) {
         if (Array.isArray(parsedData)) panels = parsedData;
@@ -319,7 +460,6 @@ function renderTranscriptOutput(data) {
     if (panels && panels.length > 0) {
         return renderTranscript(panels);
     } else {
-        // Fallback to JSON
         const json = JSON.stringify(parsedData, null, 2);
         return html`<pre class="m-0 text-success bg-body-tertiary p-3 rounded"><code>${json}</code></pre>`;
     }
@@ -341,147 +481,169 @@ function renderTranscript(panels) {
     `);
 }
 
-// New state for aggregated table sorting
-let aggSortState = { col: 'score', asc: false };
+// ----------------------------------------------------
+// COMPARISON DASHBOARD LOGIC
+// ----------------------------------------------------
 
-function renderAggregatedTable() {
-    const models = dashboardData.all_models;
-    const stats = {};
+function renderComparisonDashboard(data) {
+    if (!data) return;
 
-    // Initialize stats for each model
-    models.forEach(m => {
-        stats[m] = {
-            count: 0,
-            score: 0,
-            text_accuracy: 0,
-            speaker_accuracy: 0,
-            capitalization_accuracy: 0,
-            panel_alignment: 0,
-            hallucination_penalty: 0
-        };
-    });
+    // Calculate Metrics
+    const total = data.length;
+    if (total === 0) return;
 
-    // Accumulate data
-    dashboardData.strips.forEach(strip => {
-        models.forEach(m => {
-            const data = strip.models[m];
-            if (data) {
-                stats[m].count++;
-                stats[m].score += parseFloat(data.score) || 0;
-                stats[m].text_accuracy += parseFloat(data.metrics.text_accuracy) || 0;
-                stats[m].speaker_accuracy += parseFloat(data.metrics.speaker_accuracy) || 0;
-                stats[m].capitalization_accuracy += parseFloat(data.metrics.capitalization_accuracy) || 0;
-                stats[m].panel_alignment += parseFloat(data.metrics.panel_alignment) || 0;
-                stats[m].hallucination_penalty += parseFloat(data.metrics.hallucination_penalty) || 0;
-            }
-        });
-    });
+    const bothAgree = data.filter(d => d.comparison.speaker_agreement && d.comparison.text_agreement).length;
+    const textAgree = data.filter(d => d.comparison.text_agreement).length;
+    const speakerAgree = data.filter(d => d.comparison.speaker_agreement).length;
 
-    // Compute averages
-    let aggregatedData = models.map(m => {
-        const c = stats[m].count || 1; // Avoid division by zero
-        // Hallucination penalty is a deduction, so we display it as negative, but for sorting we might want the magnitude?
-        // Let's store the raw average deduction (positive number)
-        return {
-            name: m,
-            count: stats[m].count, // Kept in data, removed from view
-            score: parseFloat((stats[m].score / c).toFixed(1)),
-            text_accuracy: parseFloat((stats[m].text_accuracy / c).toFixed(1)),
-            speaker_accuracy: parseFloat((stats[m].speaker_accuracy / c).toFixed(1)),
-            capitalization_accuracy: parseFloat((stats[m].capitalization_accuracy / c).toFixed(1)),
-            panel_alignment: parseFloat((stats[m].panel_alignment / c).toFixed(1)),
-            hallucination_penalty: parseFloat((stats[m].hallucination_penalty / c).toFixed(1))
-        };
-    });
+    // Derived stats
+    const coveragePct = ((bothAgree / total) * 100).toFixed(1);
+    const textAgreePct = ((textAgree / total) * 100).toFixed(1);
+    const speakerAgreePct = ((speakerAgree / total) * 100).toFixed(1);
 
-    // Sorting Logic
-    aggregatedData.sort((a, b) => {
-        let valA = a[aggSortState.col];
-        let valB = b[aggSortState.col];
-
-        // Specific handling if we were sorting by name strings
-        if (aggSortState.col === 'name') {
-            if (valA < valB) return aggSortState.asc ? -1 : 1;
-            if (valA > valB) return aggSortState.asc ? 1 : -1;
-            return 0;
-        }
-
-        // Numeric sort
-        // For hallucination, lower penalty is better? Or higher penalty deduction (more negative) is worse?
-        // Val stored is positive average penalty. Lower is better.
-        // If sorting asc: small penalty first (better).
-        // If sorting desc: huge penalty first (worse).
-
-        // Let's stick to standard numeric sort:
-        if (valA < valB) return aggSortState.asc ? -1 : 1;
-        if (valA > valB) return aggSortState.asc ? 1 : -1;
-        return 0;
-    });
-
-    const getAggSortIcon = (col) => {
-        if (aggSortState.col !== col) return '';
-        return aggSortState.asc ? html`<i class="bi bi-caret-up-fill sort-icon"></i>` : html`<i class="bi bi-caret-down-fill sort-icon"></i>`;
-    };
-
-    const sortAgg = (col) => {
-        if (aggSortState.col === col) {
-            aggSortState.asc = !aggSortState.asc;
-        } else {
-            aggSortState.col = col;
-            aggSortState.asc = (col === 'name'); // Default asc for name, desc for numbers usually (but let's click to flip)
-        }
-        renderAggregatedTable();
-    };
-
-
-
+    // Render Stats Cards
     render(html`
-        <div class="card shadow-sm border-0 mb-4 overflow-hidden">
-            <div class="card-header bg-body-tertiary border-0 py-3">
-                <h5 class="card-title mb-0 fw-bold text-uppercase small text-body-secondary"><i class="bi bi-trophy me-2"></i>Overall Model Statistics</h5>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-hover mb-0 align-middle" style="width: auto; min-width: 100%;">
-                    <thead class="text-secondary text-uppercase small fw-bold">
-                        <tr>
-                            <th class="ps-4 sortable" @click=${() => sortAgg('name')}>Model ${getAggSortIcon('name')}</th>
-                            <th class="text-center sortable" @click=${() => sortAgg('score')} style="width: 100px;">Avg Score ${getAggSortIcon('score')}</th>
-                            <th class="text-center sortable" @click=${() => sortAgg('text_accuracy')} style="width: 100px;">Text (40) ${getAggSortIcon('text_accuracy')}</th>
-                            <th class="text-center sortable" @click=${() => sortAgg('speaker_accuracy')} style="width: 100px;">Spkr (25) ${getAggSortIcon('speaker_accuracy')}</th>
-                            <th class="text-center sortable" @click=${() => sortAgg('capitalization_accuracy')} style="width: 100px;">Caps (15) ${getAggSortIcon('capitalization_accuracy')}</th>
-                            <th class="text-center sortable" @click=${() => sortAgg('panel_alignment')} style="width: 100px;">Panel (10) ${getAggSortIcon('panel_alignment')}</th>
-                            <th class="text-center sortable pe-4" @click=${() => sortAgg('hallucination_penalty')} style="width: 100px;">Halluc (10) ${getAggSortIcon('hallucination_penalty')}</th>
-                        </tr>
-                    </thead>
-                    <tbody class="border-top-0">
-                        ${aggregatedData.map((m, i) => html`
-                            <tr class="${i === 0 && aggSortState.col === 'score' && !aggSortState.asc ? 'bg-body-tertiary' : ''}">
-                                <td class="ps-4 fw-medium text-body-emphasis">
-                                    ${m.name}
-                                </td>
-                                <td class="text-center p-0 border-start border-end" style="width: 100px;">
-                                    <div class="score-badge ${getScoreClass(m.score)}">${m.score}%</div>
-                                </td>
-                                <td class="text-center p-0 border-end" style="width: 100px;">
-                                    <div class="score-badge ${getCompScoreClass(m.text_accuracy, 40)}">${m.text_accuracy}</div>
-                                </td>
-                                <td class="text-center p-0 border-end" style="width: 100px;">
-                                    <div class="score-badge ${getCompScoreClass(m.speaker_accuracy, 25)}">${m.speaker_accuracy}</div>
-                                </td>
-                                <td class="text-center p-0 border-end" style="width: 100px;">
-                                    <div class="score-badge ${getCompScoreClass(m.capitalization_accuracy, 15)}">${m.capitalization_accuracy}</div>
-                                </td>
-                                <td class="text-center p-0 border-end" style="width: 100px;">
-                                    <div class="score-badge ${getCompScoreClass(m.panel_alignment, 10)}">${m.panel_alignment}</div>
-                                </td>
-                                <td class="text-center p-0" style="width: 100px;">
-                                    <div class="score-badge ${getCompScoreClass(m.hallucination_penalty, 10)}">${(10 - m.hallucination_penalty).toFixed(1)}</div>
-                                </td>
-                            </tr>
-                        `)}
-                    </tbody>
-                </table>
+        <!-- Coverage Card -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm bg-body-tertiary">
+                <div class="card-body text-center p-4">
+                    <h6 class="text-secondary text-uppercase fw-bold mb-3 small">Comparison Coverage</h6>
+                    <div class="display-4 fw-bold text-primary mb-2">${coveragePct}%</div>
+                    <p class="text-muted small mb-0">Panels where BOTH speaker and text agree completely.</p>
+                </div>
             </div>
         </div>
-    `, $("#toptable"));
+        
+        <!-- Text Agreement Card -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <h6 class="text-secondary text-uppercase fw-bold mb-3 small">Text Agreement</h6>
+                    <div class="display-4 fw-bold text-success mb-2">${textAgreePct}%</div>
+                    <p class="text-muted small mb-0">Normalized text matches between models.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speaker Agreement Card -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <h6 class="text-secondary text-uppercase fw-bold mb-3 small">Speaker Agreement</h6>
+                    <div class="display-4 fw-bold text-info mb-2">${speakerAgreePct}%</div>
+                    <p class="text-muted small mb-0">Speaker attribution matches.</p>
+                </div>
+            </div>
+        </div>
+    `, $("#comparison-stats"));
+
+
+    // Render Agreement Bar
+    // Categories: 
+    // 1. Full Agreement (Both)
+    // 2. Text Only (Text True, Spk False)
+    // 3. Speaker Only (Spk True, Text False) - Rare but possible
+    // 4. Disagreement (Both False) OR (Text False, Spk True/False) -> Basically !Text Agreement is the main disagreement usually.
+
+    // Let's stick to prompt visual:
+    // - Both Agree
+    // - Text Agree, Speaker Disagree
+    // - Text Disagree 
+
+    const countBoth = bothAgree;
+    const countTextOnly = data.filter(d => d.comparison.text_agreement && !d.comparison.speaker_agreement).length;
+    const countDisagree = total - countBoth - countTextOnly; // Text Disagree
+
+    const pctBoth = (countBoth / total) * 100;
+    const pctTextOnly = (countTextOnly / total) * 100;
+    const pctDisagree = (countDisagree / total) * 100;
+
+    render(html`
+        <div class="progress-bar bg-success" role="progressbar" style="width: ${pctBoth}%" title="Both Agree: ${countBoth}"></div>
+        <div class="progress-bar bg-warning" role="progressbar" style="width: ${pctTextOnly}%" title="Text Only: ${countTextOnly}"></div>
+        <div class="progress-bar bg-danger" role="progressbar" style="width: ${pctDisagree}%" title="Text Disagree: ${countDisagree}"></div>
+    `, $("#agreement-bar"));
+
+    render(html`
+        <div><i class="bi bi-circle-fill text-success me-1"></i> Full Agreement (${countBoth})</div>
+        <div><i class="bi bi-circle-fill text-warning me-1"></i> Text Agree, Speaker Disagree (${countTextOnly})</div>
+        <div><i class="bi bi-circle-fill text-danger me-1"></i> Text Disagree (${countDisagree})</div>
+    `, $("#agreement-legend"));
+
+
+    // Render Table
+    renderCompTable(data, $("#comparison-table"));
+}
+
+function renderCompTable(data, container) {
+    // Pagination or virtual scroll? simple render for now as list is small (~130 items)
+
+    render(html`
+        <div class="card shadow-sm border-0 overflow-hidden">
+             <div class="table-responsive">
+                <table class="table table-hover mb-0 align-middle small">
+                    <thead class="bg-body-tertiary text-secondary text-uppercase fw-bold">
+                        <tr>
+                            <th class="ps-4" style="width: 100px">ID</th>
+                            <th style="width: 120px">Speaker (A)</th>
+                            <th style="width: 120px">Speaker (B)</th>
+                            <th>Dialogue (A)</th>
+                            <th>Dialogue (B)</th>
+                            <th class="text-center" style="width: 50px" title="Speaker Agreement">Spk</th>
+                            <th class="text-center pe-4" style="width: 50px" title="Text Agreement">Txt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${data.map(row => {
+        const spkAgree = row.comparison.speaker_agreement;
+        const txtAgree = row.comparison.text_agreement;
+        const isFullAgree = spkAgree && txtAgree;
+
+        // Highlight diffs in red
+        const spkClass = spkAgree ? '' : 'text-danger fw-bold bg-danger-subtle';
+        const txtClass = txtAgree ? '' : 'text-danger bg-danger-subtle';
+
+        return html`
+                                <tr class="${isFullAgree ? '' : ''}">
+                                    <td class="ps-4 text-muted font-monospace">${row.comparison.panel_id}</td>
+                                    
+                                    <!-- Speaker A -->
+                                    <td class="${spkAgree ? '' : 'bg-body-secondary'}">
+                                        ${row.model_a_raw.speaker || html`<span class="text-muted fst-italic">None</span>`}
+                                    </td>
+                                    
+                                    <!-- Speaker B -->
+                                    <td class="${spkAgree ? '' : 'bg-warning-subtle'}">
+                                        ${row.model_b_raw.speaker || html`<span class="text-muted fst-italic">None</span>`}
+                                    </td>
+
+                                    <!-- Text A -->
+                                    <td class="${txtAgree ? '' : 'bg-body-secondary'}">
+                                        "${row.model_a_raw.text}"
+                                    </td>
+                                    
+                                    <!-- Text B -->
+                                    <td class="${txtAgree ? '' : 'bg-warning-subtle'}">
+                                        "${row.model_b_raw.text}"
+                                    </td>
+
+                                    <!-- Flags -->
+                                    <td class="text-center">
+                                        ${spkAgree
+                ? html`<i class="bi bi-check-circle-fill text-success"></i>`
+                : html`<i class="bi bi-x-circle-fill text-danger"></i>`}
+                                    </td>
+                                    <td class="text-center pe-4">
+                                        ${txtAgree
+                ? html`<i class="bi bi-check-circle-fill text-success"></i>`
+                : html`<i class="bi bi-x-circle-fill text-danger"></i>`}
+                                    </td>
+                                </tr>
+                            `;
+    })}
+                    </tbody>
+                </table>
+             </div>
+        </div>
+    `, container);
 }
